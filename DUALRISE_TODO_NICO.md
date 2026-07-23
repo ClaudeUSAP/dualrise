@@ -14,7 +14,8 @@
 - [ ] **Vue coach du browse** `/athletes` : se connecter en coach → filtres UTR/WTN/surface + cartes/list/table.
 
 ## 🟡 Git / infra
-- [ ] **`git init`** dans `dualrise/` (rien n'est versionné) + 1er commit, pour tracer tout ce travail.
+- [x] **`git init` + commits** dans `dualrise/` ✅ (fait par Claude Code : `.gitignore` propre, 0 secret/node_modules commité, checklist caviardée). Ajoute un **remote** GitHub + `git push` quand tu veux.
+- [ ] Cosmétique : les classes CSS `usap-orange` / `usap-blue` (rendues en **rouge/navy** via le remap tailwind — pas de texte visible « usap ») pourraient être renommées `dualrise-*` un jour (gros find-replace, non urgent).
 - [ ] Env `dashboard/.env.local` + clés **service_role** (scout + dashboard) + **RESEND_API_KEY** + domaine Resend Dual Rise (pour faire tourner le dashboard + les emails).
 - [ ] `scout/.env` : déjà repointé dualrise-scout ✅. Deploy Scout (Cloudflare/Vercel) quand prêt.
 
