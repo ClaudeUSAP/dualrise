@@ -19,9 +19,12 @@
 - [ ] Env `dashboard/.env.local` + clés **service_role** (scout + dashboard) + **RESEND_API_KEY** + domaine Resend Dual Rise (pour faire tourner le dashboard + les emails).
 - [ ] `scout/.env` : déjà repointé dualrise-scout ✅. Deploy Scout (Cloudflare/Vercel) quand prêt.
 
-## 🟢 Résidus USAP repérés à l'écran (à corriger)
-- [ ] Sidebar admin : lien **« Ranking & Impact Story »** pointe encore vers `story.usathleticperformance.com`.
-- [ ] Page login : contact `mailto:nicolas@usathleticperformance.com` (laissé car contact Dual Rise pas défini — donne-moi l'email/domaine Dual Rise).
+## 🟢 Résidus USAP — ✅ PURGÉS (commit du 23/07)
+- [x] Emails de contact `nicolas@`/`support@usathleticperformance.com` → **nicplancha@gmail.com** ✅ (Login, PasswordReset*, Registration*, AccountPending/Suspended, Register).
+- [x] URLs prod/partage/reset `scout.usathleticperformance.com` → **https://dualrise.vercel.app** ✅ (routes.ts, ShareProfileModal, adminUsers, AthleteManagement).
+- [x] Sidebar admin/agent « Ranking & Impact Story » (→ `story.usathleticperformance.com`) **retiré** ✅.
+- [x] Resources onglet « placement » : 3 liens USAP (map/story) + sheet ranking golf → **« Coming soon »** (structure de l'onglet gardée pour rebrancher plus tard sur des données Dual Rise) ✅.
+- [ ] **Déploiement Scout** = `dualrise.vercel.app` ✅. Quand tu auras un **vrai domaine** (dualrise.com…), reviens changer `PRODUCTION_URL` (routes.ts) + les 3 autres pour le mettre.
 - [ ] Décider **logo** Dual Rise (placeholder actuel), **domaine(s)**, **entité légale** (pages légales = placeholders).
 
 ## ✅ Write path tennis VÉRIFIÉ au runtime (create + edit)
