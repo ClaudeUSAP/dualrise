@@ -2,11 +2,11 @@
 
 > Tenue à jour par Claude Code au fil du travail. Coche ce qui est fait.
 
-## 🔴 Sécurité / comptes de test (à faire dès que possible)
-- [ ] **Remettre ton vrai mot de passe** sur le CEO `nicplancha@gmail.com` (projet **dualrise-scout**). J'y ai posé un mot de passe de test (mémo perso : c'est celui que je t'ai donné dans le chat) pour pouvoir me connecter et valider les écrans.
-- [ ] **Supprimer le compte coach de test** `coach@dualrise.test` (projet dualrise-scout) — créé pour tester la vue coach.
-- [ ] **Révoquer le PAT Supabase** (page Access Tokens) — portée large (voit aussi l'org USAP).
-- [ ] Optionnel : re-reset les DB passwords de **USAP SCOUT** et **USAP family-dashboard** si tu ne veux pas qu'ils traînent (ils n'ont servi qu'en lecture pour les dumps de schéma).
+## 🔴 Sécurité / comptes de test — ✅ FAIT
+- [x] Mot de passe CEO `nicplancha@gmail.com` réinitialisé par Nico ✅
+- [x] Compte coach de test `coach@dualrise.test` supprimé ✅ (par Claude Code)
+- [x] **PAT Supabase révoqué** ✅ (⚠️ conséquence : plus de `supabase functions deploy` / CLI possible sur dualrise sans un nouveau PAT — mais tout est déjà déployé. L'accès **DB direct psql** reste possible avec le DB password.)
+- [ ] Optionnel : re-reset les DB passwords de **USAP SCOUT** et **USAP family-dashboard** si tu ne veux pas qu'ils traînent (lecture seule pour les dumps).
 
 ## 🟠 À tester avec TON login admin (moi bloqué par la session coach de test)
 - [ ] **Créer un joueur** : Admin → Athlete Management → Add New Athlete → onglet **Athletic** (doit être 100% tennis : UTR/WTN/rankings/hand/surface/style/height/weight) → **Create** → vérifier qu'il apparaît + que les champs tennis sont bien sauvegardés.
@@ -24,8 +24,12 @@
 - [ ] Page login : contact `mailto:nicolas@usathleticperformance.com` (laissé car contact Dual Rise pas défini — donne-moi l'email/domaine Dual Rise).
 - [ ] Décider **logo** Dual Rise (placeholder actuel), **domaine(s)**, **entité légale** (pages légales = placeholders).
 
+## ✅ Write path tennis VÉRIFIÉ au runtime (create + edit)
+Testé en vrai le 23/07 : création d'un joueur via le form admin (UTR/WTN/surface/hand/club persistés en base) + édition (UTR modifié et sauvegardé). Joueur de test supprimé. **Créer/éditer un joueur tennis marche.**
+
 ## 🔵 Reste Phase 1 (dev — pas de ton côté)
 - [x] AddNewAthlete : inputs phys/tech/tac (14 notes 0–10). ✅
+- [ ] Mineur : dans le form d'édition (AdminAthleteDetail) section *Personal*, le champ « Club / Academy » pointe encore vers la colonne golf (`golf_club_team`) alors que la section *Tennis Performance* a le bon (`club_team`) → 2 champs « Club », l'un mal branché. À unifier.
 - [x] AdminAthleteView : onglet **Overview** → tennis ✅ (reste l'onglet tournaments golf, mineur).
 - [x] **Resources** : explainer golf → **tennis** ✅ (European Tennis Context, Dual Rise Star Rating, copy). *(reste : liens FFGOLF → FFT, et la table de rating basée sur avgScore golf = à refaire avec tes seuils UTR — décision produit)*
 - [x] Sweep **« USAP »** (abréviation) user-facing → Dual Rise ✅ (restent des commentaires code, inoffensifs).
