@@ -26,7 +26,6 @@
 
 ## 🔵 Reste Phase 1 (dev — pas de ton côté)
 - [x] AddNewAthlete : inputs phys/tech/tac (14 notes 0–10). ✅
-- [ ] AdminAthleteDetail : nettoyer le bloc golf « scoring-override » restant.
 - [x] AdminAthleteView : onglet **Overview** → tennis ✅ (reste l'onglet tournaments golf, mineur).
 - [x] **Resources** : explainer golf → **tennis** ✅ (European Tennis Context, Dual Rise Star Rating, copy). *(reste : liens FFGOLF → FFT, et la table de rating basée sur avgScore golf = à refaire avec tes seuils UTR — décision produit)*
 - [x] Sweep **« USAP »** (abréviation) user-facing → Dual Rise ✅ (restent des commentaires code, inoffensifs).
