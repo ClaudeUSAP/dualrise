@@ -188,28 +188,32 @@ function matchesCriteria(a: any, c: any): boolean {
     if (star < starMin) return false;
   }
 
-  // Scoring average — compares the SAME stored column the live search uses
-  // (best_recent_scoring_avg_raw). Applied ONLY when the slider is off its default
-  // [65, 85], exactly like the live search (otherwise every saved search would
-  // filter on scoring). When the value is absent for an athlete AND a scoring
-  // filter is active, the athlete is excluded.
-  const scoringMin = num(c.scoringAvgMin);
-  const scoringMax = num(c.scoringAvgMax);
-  if (scoringMin != null && scoringMax != null && (scoringMin !== 65 || scoringMax !== 85)) {
-    const v = num(a.best_recent_scoring_avg_raw);
-    if (v == null || v <= 0) return false;
-    if (v < scoringMin || v > scoringMax) return false;
+  // UTR range — matches on athlete.utr. Applied ONLY when off its default
+  // [1, 16.5], exactly like the live tennis search. Absent value + active
+  // filter → excluded.
+  const utrMin = num(c.utrMin);
+  const utrMax = num(c.utrMax);
+  if (utrMin != null && utrMax != null && (utrMin !== 1 || utrMax !== 16.5)) {
+    const v = num(a.utr);
+    if (v == null) return false;
+    if (v < utrMin || v > utrMax) return false;
   }
 
-  // Score vs course rating — same stored column as the live search
-  // (scoring_average_vs_course_rating). Applied ONLY when off its default
-  // [-4, 15]. Absent value + active filter → excluded.
-  const vsMin = num(c.scoreVsCRMin);
-  const vsMax = num(c.scoreVsCRMax);
-  if (vsMin != null && vsMax != null && (vsMin !== -4 || vsMax !== 15)) {
-    const v = num(a.scoring_average_vs_course_rating);
+  // WTN range (lower is better) — off default [1, 40]. Absent + active → excluded.
+  const wtnMin = num(c.wtnMin);
+  const wtnMax = num(c.wtnMax);
+  if (wtnMin != null && wtnMax != null && (wtnMin !== 1 || wtnMax !== 40)) {
+    const v = num(a.wtn);
     if (v == null) return false;
-    if (v < vsMin || v > vsMax) return false;
+    if (v < wtnMin || v > wtnMax) return false;
+  }
+
+  // Preferred surface — any selected surface substring-matches the athlete's.
+  // Athletes with no surface set are included (like the live search).
+  const surfaces = Array.isArray(c.surfaces) ? c.surfaces : [];
+  if (surfaces.length > 0) {
+    const s = (a.preferred_surface ?? '').toString().toLowerCase();
+    if (s && !surfaces.some((x: string) => s.includes(String(x).toLowerCase()))) return false;
   }
 
   return true;

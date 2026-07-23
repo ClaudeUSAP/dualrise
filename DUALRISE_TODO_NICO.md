@@ -38,7 +38,7 @@
 - [ ] Fonctions **calculate-athlete-metrics / backfill-athlete-metrics** : calcul de scoring **golf** (le tennis ne s'en sert pas → à ignorer ou retirer).
 - [x] `AddNewCoach` : « Men's/Women's Golf » → Tennis ✅.
 - [ ] **CSV import/export** (`csvParser`, `csvExporter`, `DataImportExport`, `csvTournamentParser`, parser **FFGolf**) : format golf → **chantier spécialisé** (l'import tennis a un format différent : ITF/UTR, pas FFGolf). À traiter à part.
-- [ ] AdminAthleteDetail : bloc golf « scoring-override / Default Scoring Period » encore visible dans le form d'édition (inoffensif fonctionnellement — juste de l'UI golf à retirer).
+- [x] AdminAthleteDetail : bloc golf « scoring-override / Default Scoring Period » **retiré** du form d'édition ✅ (reste juste la clé interne `'Golf Performance'` pour le tracking du save — non visible).
 - [ ] **Composants tournois partagés** (`TournamentResultsTable`, `BestRecentScoreDisplay`, `AthleteMetricsDisplay/Table`, `TournamentPerformanceTab`) : encore golf (rounds/par/CR/scoring). Utilisés dans les onglets tournaments admin + leaderboards. Chantier « analytics tournois golf → historique UTR / résultats matchs ». Note : la **fiche coach AthleteDetail a déjà sa propre table matchs tennis** (pas ce composant).
 - [ ] Petit polish : Location du PDF affiche « Hasselt, BEL, Belgium » (redondance BEL+Belgium, côté données du seed).
 
