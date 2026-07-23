@@ -34,7 +34,7 @@
 - [x] Modal `SearchResultsModal` → tennis ✅ (badge UTR).
 - [x] **Emails** (edge functions) : copy « Scout by Dual Rise » + golf→tennis, **redéployées** ✅. *(reste : le domaine d'envoi `@notifications.usathleticperformance.com` — à remplacer par ton domaine Resend Dual Rise vérifié ; l'appelant de `send-athlete-info` doit passer UTR/WTN dans les props ; `nicolas@usathleticperformance.com` = email admin de notif, à changer si besoin)*
 - [ ] **Emails ne partiront pas** tant que **RESEND_API_KEY** n'est pas posé sur dualrise-scout (`supabase secrets set`) + domaine vérifié.
-- [ ] **saved-search alerts** : clés de critères golf→tennis (le job tourne déjà en cron mais matche sur des critères golf).
+- [x] **saved-search alerts** → tennis ✅ (Athletes sérialise UTR/WTN/surface, edge function `run-saved-search-alerts` matche dessus, redéployée).
 - [ ] Fonctions **calculate-athlete-metrics / backfill-athlete-metrics** : calcul de scoring **golf** (le tennis ne s'en sert pas → à ignorer ou retirer).
 - [x] `AddNewCoach` : « Men's/Women's Golf » → Tennis ✅.
 - [ ] **CSV import/export** (`csvParser`, `csvExporter`, `DataImportExport`, `csvTournamentParser`, parser **FFGolf**) : format golf → **chantier spécialisé** (l'import tennis a un format différent : ITF/UTR, pas FFGolf). À traiter à part.
