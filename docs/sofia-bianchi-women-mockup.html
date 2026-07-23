@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sofia Bianchi — Scout by Dual Rise (Women)</title>
+<style>
+  :root{
+    --navy:#0B1D58; --navy-bright:#132F88; --red:#E11D2A; --red-soft:#FDE7E9;
+    --cream:#FAFAF7; --cream-2:#F4F2EC; --line:#E5E2D9; --text:#0B1D58; --muted:#6B7280;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,"Inter",system-ui,Arial,sans-serif;background:var(--cream);color:var(--text);font-size:15px;line-height:1.5}
+  .display{font-style:italic;font-weight:900;text-transform:uppercase;letter-spacing:-.02em}
+  .topbar{background:var(--navy);color:#fff;padding:12px 24px;display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:center;gap:12px}
+  .chev{width:26px;height:26px}
+  .brand .name{font-size:19px}
+  .demo{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:#9fb0d8}
+  .wrap{max-width:1080px;margin:0 auto;padding:24px}
+  .hero{background:linear-gradient(180deg,var(--navy) 0%,var(--navy-bright) 100%);border-radius:18px;color:#fff;padding:28px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+  .avatar{width:120px;height:120px;border-radius:16px;background:#fff;color:var(--navy);display:flex;align-items:center;justify-content:center;font-size:44px;flex:0 0 auto;border:3px solid var(--red)}
+  .hero .id{flex:1;min-width:240px}
+  .hero h1{margin:0 0 4px;font-size:34px}
+  .hero .sub{color:#cdd7f0;font-size:14px}
+  .wtag{display:inline-block;background:var(--red);color:#fff;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;border-radius:999px;padding:3px 10px;margin-bottom:8px}
+  .stars{color:var(--red);font-size:20px;letter-spacing:2px;margin-top:8px}
+  .stars .off{color:#3a4c86}
+  .cta{display:inline-flex;align-items:center;gap:8px;background:var(--red);color:#fff;border:none;border-radius:10px;padding:11px 18px;font-weight:700;cursor:pointer;font-size:14px;text-decoration:none}
+  .badges{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:12px;margin:18px 0}
+  .badge{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;text-align:center}
+  .badge .k{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+  .badge .v{font-size:22px;font-weight:800;margin-top:2px}
+  .badge .v.red{color:var(--red)}
+  .tabs{display:flex;gap:4px;border-bottom:2px solid var(--line);margin:8px 0 18px;flex-wrap:wrap}
+  .tab{border:none;background:none;padding:11px 18px;font-size:14px;font-weight:700;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;text-transform:uppercase;letter-spacing:.03em}
+  .tab:hover{color:var(--navy)}
+  .tab.active{color:var(--navy);border-bottom-color:var(--red)}
+  .panel{display:none}.panel.active{display:block}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:820px){.grid{grid-template-columns:1fr}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+  .card h2{font-size:15px;margin:0 0 14px;color:var(--navy);text-transform:uppercase;letter-spacing:.04em}
+  .card h2 .accent{color:var(--red)}
+  .row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px dashed var(--line);font-size:14px}
+  .row:last-child{border-bottom:0}
+  .row .lab{color:var(--muted)}
+  .row .val{font-weight:700}
+  .bar{margin:9px 0}
+  .bar .top{display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px}
+  .bar .track{height:8px;background:var(--cream-2);border-radius:6px;overflow:hidden}
+  .bar .fill{height:100%;border-radius:6px;background:var(--navy)}
+  .bar .fill.red{background:var(--red)}
+  .bar .num{font-weight:800;color:var(--navy)}
+  .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .tag{background:var(--cream-2);border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:13px}
+  .tag.red{background:var(--red-soft);border-color:#f6c6ca;color:#8f1119}
+  .tag.navy{background:#eaf0ff;border-color:#c9d6f5;color:var(--navy)}
+  ul.clean{margin:0;padding-left:18px}
+  ul.clean li{margin:5px 0}
+  .full{grid-column:1/-1}
+  .note{font-size:12px;color:var(--muted);margin-top:8px}
+  .foot{text-align:center;color:var(--muted);font-size:12px;padding:26px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700}
+  tr:last-child td{border-bottom:0}
+  .score{font-weight:700}.win{color:#0a7d3c}.loss{color:var(--red)}
+  .pill{display:inline-block;background:var(--cream-2);border:1px solid var(--line);border-radius:6px;padding:1px 7px;font-size:12px;font-weight:700}
+  .banner{background:var(--red-soft);border:1px solid #f6c6ca;color:#8f1119;border-radius:10px;padding:8px 12px;font-size:12.5px;margin-bottom:14px}
+  .media-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+  .video{background:#000;border-radius:12px;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;color:#fff;position:relative;overflow:hidden}
+  .video .play{width:54px;height:54px;border-radius:50%;background:rgba(225,29,42,.9);display:flex;align-items:center;justify-content:center;font-size:22px}
+  .video .cap{position:absolute;bottom:8px;left:10px;font-size:12px;color:#ddd}
+  .linkbtn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 14px;font-weight:700;font-size:13px;text-decoration:none;color:var(--navy)}
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">
+      <svg class="chev" viewBox="0 0 64 64"><path d="M8 50 L32 16 L56 50" fill="none" stroke="#E11D2A" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="name display">SCOUT <span style="font-style:normal;font-weight:400;color:#9fb0d8;text-transform:none;letter-spacing:0;font-size:14px">by</span> Dual&nbsp;Rise</span>
+    </div>
+    <span class="demo">Coach view — Women — mockup</span>
+  </div>
+
+  <div class="wrap">
+    <div class="hero">
+      <div class="avatar display">SB</div>
+      <div class="id">
+        <span class="wtag">Women's tennis</span>
+        <h1 class="display">Sofia Bianchi</h1>
+        <div class="sub">Right-handed · Two-handed backhand · Counterpuncher · Hard court &nbsp;|&nbsp; Tennis Club Milano — Milan 🇮🇹</div>
+        <div class="stars">★★★★★<span class="off">★★</span> <span style="color:#cdd7f0;font-size:13px">&nbsp;5/7</span></div>
+      </div>
+      <a class="cta" href="#">⬇ Download one-pager PDF</a>
+    </div>
+
+    <div class="badges">
+      <div class="badge"><div class="k">UTR</div><div class="v red">10.90</div></div>
+      <div class="badge"><div class="k">WTN</div><div class="v red">22.00</div></div>
+      <div class="badge"><div class="k">Nat. 🇮🇹</div><div class="v">#6</div></div>
+      <div class="badge"><div class="k">ITF Junior</div><div class="v">540</div></div>
+      <div class="badge"><div class="k">GPA</div><div class="v">3.90</div></div>
+      <div class="badge"><div class="k">Budget / yr</div><div class="v">$20,000</div></div>
+      <div class="badge"><div class="k">Entry</div><div class="v">Fall 2027</div></div>
+      <div class="badge"><div class="k">Major</div><div class="v" style="font-size:14px">Business</div></div>
+    </div>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="personal">Personal</button>
+      <button class="tab" data-tab="tennis">Tennis</button>
+      <button class="tab" data-tab="academics">Academics &amp; Preferences</button>
+      <button class="tab" data-tab="tournaments">Tournaments</button>
+      <button class="tab" data-tab="media">Media</button>
+    </div>
+
+    <!-- PERSONAL -->
+    <div class="panel active" id="personal">
+      <div class="grid">
+        <div class="card">
+          <h2>Player <span class="accent">identity</span></h2>
+          <div class="row"><span class="lab">Date of birth</span><span class="val">Mar 12, 2008 (17)</span></div>
+          <div class="row"><span class="lab">Nationality</span><span class="val">Italy 🇮🇹</span></div>
+          <div class="row"><span class="lab">Height / Weight</span><span class="val">172 cm · 60 kg</span></div>
+          <div class="row"><span class="lab">Dominant hand</span><span class="val">Right</span></div>
+          <div class="row"><span class="lab">Backhand</span><span class="val">Two-handed</span></div>
+          <div class="row"><span class="lab">Club</span><span class="val">Tennis Club Milano</span></div>
+          <div class="row"><span class="lab">City</span><span class="val">Milan</span></div>
+        </div>
+        <div class="card">
+          <h2>Personality <span class="accent">& notes</span></h2>
+          <div class="tags" style="margin-bottom:10px">
+            <span class="tag navy">Disciplined</span><span class="tag navy">Focused</span>
+            <span class="tag navy">Coachable</span><span class="tag navy">Ambitious</span>
+          </div>
+          <div class="row"><span class="lab">Contact details</span><span class="val">Via Dual Rise 🔒</span></div>
+          <div class="note">Dashboard "Notes" tab: paste the player's tennis questionnaire answers here.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TENNIS -->
+    <div class="panel" id="tennis">
+      <div class="grid">
+        <div class="card">
+          <h2>Ratings & <span class="accent">rankings</span></h2>
+          <div class="row"><span class="lab">UTR</span><span class="val">10.90</span></div>
+          <div class="row"><span class="lab">WTN</span><span class="val">22.00</span></div>
+          <div class="row"><span class="lab">National ranking</span><span class="val">#6 (Italy)</span></div>
+          <div class="row"><span class="lab">ITF Junior</span><span class="val">540</span></div>
+          <div class="row"><span class="lab">Preferred surface</span><span class="val">Hard court</span></div>
+          <div class="row"><span class="lab">Play style</span><span class="val">Counterpuncher</span></div>
+        </div>
+        <div class="card">
+          <h2>Physical <span class="accent">attributes</span></h2>
+          <div class="bar"><div class="top"><span>Flexibility</span><span class="num">8</span></div><div class="track"><div class="fill" style="width:80%"></div></div></div>
+          <div class="bar"><div class="top"><span>Strength</span><span class="num">6</span></div><div class="track"><div class="fill" style="width:60%"></div></div></div>
+          <div class="bar"><div class="top"><span>Endurance</span><span class="num">8</span></div><div class="track"><div class="fill" style="width:80%"></div></div></div>
+        </div>
+        <div class="card full">
+          <h2>Technical <span class="accent">skills</span></h2>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 28px">
+            <div class="bar"><div class="top"><span>Serve</span><span class="num">6</span></div><div class="track"><div class="fill" style="width:60%"></div></div></div>
+            <div class="bar"><div class="top"><span>Forehand</span><span class="num">7</span></div><div class="track"><div class="fill" style="width:70%"></div></div></div>
+            <div class="bar"><div class="top"><span>Backhand</span><span class="num">9</span></div><div class="track"><div class="fill red" style="width:90%"></div></div></div>
+            <div class="bar"><div class="top"><span>Volley</span><span class="num">6</span></div><div class="track"><div class="fill" style="width:60%"></div></div></div>
+            <div class="bar"><div class="top"><span>Smash</span><span class="num">6</span></div><div class="track"><div class="fill" style="width:60%"></div></div></div>
+            <div class="bar"><div class="top"><span>Baseline game</span><span class="num">9</span></div><div class="track"><div class="fill red" style="width:90%"></div></div></div>
+            <div class="bar"><div class="top"><span>Net game</span><span class="num">5</span></div><div class="track"><div class="fill" style="width:50%"></div></div></div>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Tactical <span class="accent">skills</span></h2>
+          <div class="bar"><div class="top"><span>Decision-making</span><span class="num">8</span></div><div class="track"><div class="fill" style="width:80%"></div></div></div>
+          <div class="bar"><div class="top"><span>Adaptability</span><span class="num">9</span></div><div class="track"><div class="fill red" style="width:90%"></div></div></div>
+          <div class="bar"><div class="top"><span>Mental resilience</span><span class="num">9</span></div><div class="track"><div class="fill red" style="width:90%"></div></div></div>
+          <div class="bar"><div class="top"><span>Anticipation</span><span class="num">8</span></div><div class="track"><div class="fill" style="width:80%"></div></div></div>
+        </div>
+        <div class="card">
+          <h2>Strengths & <span class="accent">weaknesses</span></h2>
+          <div style="font-size:12px;text-transform:uppercase;color:var(--muted);margin-bottom:6px">Strengths</div>
+          <div class="tags" style="margin-bottom:12px">
+            <span class="tag navy">Two-handed backhand</span><span class="tag navy">Elite consistency & defense</span>
+            <span class="tag navy">Footwork</span><span class="tag navy">Mental toughness</span>
+          </div>
+          <div style="font-size:12px;text-transform:uppercase;color:var(--muted);margin-bottom:6px">Weaknesses</div>
+          <div class="tags">
+            <span class="tag red">Serve power</span><span class="tag red">Finishing at net</span>
+            <span class="tag red">First-strike offense</span>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Development <span class="accent">& goals</span></h2>
+          <div style="font-size:12px;text-transform:uppercase;color:var(--muted);margin-bottom:6px">Areas of improvement</div>
+          <ul class="clean" style="margin-bottom:10px">
+            <li>Add first-strike offense</li><li>Improve serve speed</li>
+            <li>Come forward and finish at net</li><li>Shorten points when ahead</li>
+          </ul>
+          <div style="font-size:12px;text-transform:uppercase;color:var(--muted);margin-bottom:6px">Goals</div>
+          <div class="tags">
+            <span class="tag">🎾 Compete in NCAA D1</span><span class="tag">📈 Reach the WTA tour</span><span class="tag">🎓 Academic All-American</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACADEMICS -->
+    <div class="panel" id="academics">
+      <div class="grid">
+        <div class="card">
+          <h2>Academic <span class="accent">profile</span></h2>
+          <div class="row"><span class="lab">High school</span><span class="val">Liceo Scientifico Milano</span></div>
+          <div class="row"><span class="lab">GPA</span><span class="val">3.90</span></div>
+          <div class="row"><span class="lab">School average</span><span class="val">17/20 → goal 18</span></div>
+          <div class="row"><span class="lab">Specialization</span><span class="val">Sciences</span></div>
+          <div class="row"><span class="lab">Intended major</span><span class="val">Business Administration</span></div>
+          <div class="row"><span class="lab">Duolingo</span><span class="val">125</span></div>
+          <div class="row"><span class="lab">Eligibility left</span><span class="val">5 years</span></div>
+          <div class="row"><span class="lab">Divisions</span><span class="val">Eligible in all</span></div>
+          <div class="row"><span class="lab">Annual budget</span><span class="val">$20,000</span></div>
+          <div class="row"><span class="lab">Entry</span><span class="val">Fall 2027</span></div>
+        </div>
+        <div class="card">
+          <h2>University <span class="accent">preferences</span></h2>
+          <div style="font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:2px 0 6px">Athletic program</div>
+          <div class="bar"><div class="top"><span>Program importance</span><span class="num">8</span></div><div class="track"><div class="fill" style="width:80%"></div></div></div>
+          <div class="bar"><div class="top"><span>Team level</span><span class="num">8</span></div><div class="track"><div class="fill" style="width:80%"></div></div></div>
+          <div class="bar"><div class="top"><span>Competition level</span><span class="num">8</span></div><div class="track"><div class="fill" style="width:80%"></div></div></div>
+          <div class="bar"><div class="top"><span>Coach experience</span><span class="num">8</span></div><div class="track"><div class="fill" style="width:80%"></div></div></div>
+          <div style="font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:12px 0 6px">Academic</div>
+          <div class="bar"><div class="top"><span>University reputation</span><span class="num">10</span></div><div class="track"><div class="fill red" style="width:100%"></div></div></div>
+          <div class="bar"><div class="top"><span>Choice of majors</span><span class="num">9</span></div><div class="track"><div class="fill red" style="width:90%"></div></div></div>
+          <div class="bar"><div class="top"><span>Class size</span><span class="num">9</span></div><div class="track"><div class="fill red" style="width:90%"></div></div></div>
+          <div style="font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:12px 0 6px">Location</div>
+          <div class="bar"><div class="top"><span>Near a big city</span><span class="num">8</span></div><div class="track"><div class="fill" style="width:80%"></div></div></div>
+          <div class="bar"><div class="top"><span>Social life</span><span class="num">8</span></div><div class="track"><div class="fill" style="width:80%"></div></div></div>
+          <div class="bar"><div class="top"><span>Climate</span><span class="num">7</span></div><div class="track"><div class="fill" style="width:70%"></div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOURNAMENTS -->
+    <div class="panel" id="tournaments">
+      <div class="card full" style="margin-bottom:18px">
+        <h2>Best <span class="accent">results</span></h2>
+        <div class="tags">
+          <span class="tag">Winner · ITF J60 Milano</span>
+          <span class="tag">Semifinalist · ITF J100 Prato</span>
+          <span class="tag">Italy U16 national champion</span>
+          <span class="tag">QF · European Summer Cups (team)</span>
+          <span class="tag">Doubles winner · J60 Santa Croce</span>
+        </div>
+      </div>
+      <div class="card full">
+        <h2>Latest <span class="accent">results</span></h2>
+        <div class="banner">Sample rows — in the live product these sync automatically from the player's UTR match history.</div>
+        <div style="overflow-x:auto">
+        <table>
+          <thead>
+            <tr><th>Tournament</th><th>Location</th><th>Round</th><th>Opponent</th><th>Opp. UTR</th><th>Final score</th><th>Notes</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>ITF J60 Milano</td><td>Milan, ITA</td><td>Final</td><td>R. Conti</td><td><span class="pill">10.7</span></td><td class="score win">6–3, 6–4</td><td>Champion</td></tr>
+            <tr><td>ITF J100 Prato</td><td>Prato, ITA</td><td>Semifinal</td><td>K. Novak</td><td><span class="pill">11.5</span></td><td class="score loss">4–6, 6–7(4)</td><td>—</td></tr>
+            <tr><td>ITF J100 Prato</td><td>Prato, ITA</td><td>Quarterfinal</td><td>M. Silva</td><td><span class="pill">10.2</span></td><td class="score win">6–2, 6–1</td><td>Straight sets</td></tr>
+            <tr><td>ITF J60 Santa Croce</td><td>Santa Croce, ITA</td><td>Round of 16</td><td>A. Meyer</td><td><span class="pill">10.8</span></td><td class="score win">7–6(5), 3–6, 6–4</td><td>3-set battle</td></tr>
+            <tr><td>Italy U16 Nationals</td><td>Rome, ITA</td><td>Final</td><td>G. Ricci</td><td><span class="pill">10.9</span></td><td class="score win">6–4, 7–5</td><td>National title</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- MEDIA -->
+    <div class="panel" id="media">
+      <div class="card full">
+        <h2>Match <span class="accent">video</span></h2>
+        <div class="note" style="margin:0 0 14px">Tennis coaches watch full matches (1.5–3h) to assess behaviour, tactical IQ, competitiveness and reaction under pressure.</div>
+        <div class="media-grid">
+          <div class="video"><div class="play">▶</div><div class="cap">Full match — J60 Milano Final (1:38:22)</div></div>
+          <div class="video"><div class="play">▶</div><div class="cap">Full match — J100 Prato SF (2:05:47)</div></div>
+          <div class="video"><div class="play">▶</div><div class="cap">Practice / rally footage (5:40)</div></div>
+        </div>
+      </div>
+      <div class="card full" style="margin-top:18px">
+        <h2>External <span class="accent">links</span></h2>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a class="linkbtn" href="#">🎾 UTR profile</a>
+          <a class="linkbtn" href="#">🌐 WTN profile</a>
+          <a class="linkbtn" href="#">📸 Photo gallery</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot">Scout by Dual Rise — Women's tennis · demo data: Sofia Bianchi (class of 2027).</div>
+  </div>
+
+<script>
+  document.querySelectorAll('.tab').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var id = btn.getAttribute('data-tab');
+      document.querySelectorAll('.tab').forEach(function(b){ b.classList.remove('active'); });
+      document.querySelectorAll('.panel').forEach(function(p){ p.classList.remove('active'); });
+      btn.classList.add('active');
+      document.getElementById(id).classList.add('active');
+      window.scrollTo({top:0,behavior:'smooth'});
+    });
+  });
+</script>
+</body>
+</html>

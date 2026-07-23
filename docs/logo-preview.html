@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dual Rise — logo placeholder</title>
+<style>
+  body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#FAFAF7;color:#0B1D58;padding:32px}
+  h1{font-style:italic;text-transform:uppercase;letter-spacing:-.02em;font-size:22px}
+  .row{display:flex;gap:24px;flex-wrap:wrap;margin:20px 0 36px}
+  .card{border:1px solid #E5E2D9;border-radius:14px;padding:24px;background:#fff;min-width:280px}
+  .card.navy{background:#0B1D58;border-color:#0B1D58}
+  .label{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#6B7280;margin-bottom:14px}
+  .card.navy .label{color:#9fb0d8}
+  .fav{display:flex;align-items:center;gap:16px}
+  .swatches{display:flex;gap:12px;margin-top:8px}
+  .sw{width:80px;height:80px;border-radius:12px;display:flex;align-items:flex-end;padding:8px;color:#fff;font-size:11px;font-weight:700}
+</style>
+</head>
+<body>
+  <h1>Dual Rise — logo placeholder (bleu / rouge)</h1>
+  <div class="row">
+    <div class="card">
+      <div class="label">Logo — fond clair</div>
+      <img src="dashboard/public/dualrise-logo-red.svg" width="300" alt="Dual Rise">
+    </div>
+    <div class="card navy">
+      <div class="label">Logo — fond marine (sidebar / dashboard)</div>
+      <img src="dashboard/public/dualrise-logo-white.svg" width="300" alt="Dual Rise">
+    </div>
+  </div>
+  <div class="row">
+    <div class="card">
+      <div class="label">Favicon / monogramme</div>
+      <div class="fav">
+        <img src="dashboard/public/favicon.svg" width="64" height="64" alt="DR">
+        <img src="dashboard/public/favicon.svg" width="32" height="32" alt="DR">
+        <img src="dashboard/public/favicon.svg" width="16" height="16" alt="DR">
+      </div>
+    </div>
+    <div class="card">
+      <div class="label">Palette de marque</div>
+      <div class="swatches">
+        <div class="sw" style="background:#0B1D58">#0B1D58<br>navy</div>
+        <div class="sw" style="background:#132F88">#132F88<br>bright</div>
+        <div class="sw" style="background:#E11D2A">#E11D2A<br>rouge</div>
+        <div class="sw" style="background:#FDE7E9;color:#0B1D58">#FDE7E9<br>soft</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

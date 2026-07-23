@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build output
+dist/
+dist-ssr/
+**/dist/
+build/
+**/build/
+.next/
+**/.next/
+out/
+**/out/
+
+# Env / secrets (never commit real keys)
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Supabase local temp
+.supabase/
+**/.supabase/
+
+# Logs & OS
+*.log
+**/*.log
+.DS_Store
+**/.DS_Store
+*.tsbuildinfo

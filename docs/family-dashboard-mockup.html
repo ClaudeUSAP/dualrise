@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Player Dashboard by Dual Rise — mockup</title>
+<style>
+  :root{--navy:#0B1D58;--navy-bright:#132F88;--red:#E11D2A;--red-soft:#FDE7E9;--cream:#FAFAF7;--cream-2:#F4F2EC;--line:#E5E2D9;--text:#0B1D58;--muted:#6B7280;--green:#0a7d3c}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,"Inter",system-ui,Arial,sans-serif;background:var(--cream);color:var(--text);font-size:14px;line-height:1.5}
+  .display{font-style:italic;font-weight:900;text-transform:uppercase;letter-spacing:-.02em}
+  /* top */
+  .top{background:var(--navy);color:#fff;padding:12px 22px;display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:center;gap:10px}
+  .chev{width:24px;height:24px}
+  .brand .name{font-size:17px}
+  .who{display:flex;align-items:center;gap:10px;font-size:13px;color:#c5d0ee}
+  .who .me{width:34px;height:34px;border-radius:50%;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px}
+  /* nav tabs */
+  .tabs{background:#fff;border-bottom:1px solid var(--line);padding:0 16px;display:flex;gap:2px;overflow-x:auto;position:sticky;top:0;z-index:5}
+  .tab{border:none;background:none;padding:14px 16px;font-weight:700;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap;font-size:13.5px;text-transform:uppercase;letter-spacing:.03em}
+  .tab:hover{color:var(--navy)}
+  .tab.active{color:var(--navy);border-bottom-color:var(--red)}
+  .wrap{max-width:1000px;margin:0 auto;padding:22px}
+  .screen{display:none}.screen.active{display:block}
+  h1.page{font-size:24px;margin:0 0 2px}
+  .lead{color:var(--muted);margin:0 0 18px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}
+  .card h2{font-size:14px;margin:0 0 12px;text-transform:uppercase;letter-spacing:.04em}
+  .accent{color:var(--red)}
+  .cols{display:grid;grid-template-columns:2fr 1fr;gap:18px}
+  @media(max-width:840px){.cols{grid-template-columns:1fr}}
+  .stack>*+*{margin-top:16px}
+  /* progress ring/bar */
+  .prog{height:10px;background:var(--cream-2);border-radius:6px;overflow:hidden}
+  .prog>span{display:block;height:100%;background:var(--red);border-radius:6px}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin-bottom:18px}
+  .kpi{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px}
+  .kpi .k{font-size:11px;text-transform:uppercase;color:var(--muted);letter-spacing:.05em}
+  .kpi .v{font-size:26px;font-weight:900;margin-top:2px}
+  .kpi .v.red{color:var(--red)}
+  /* checklist */
+  .section{border:1px solid var(--line);border-radius:12px;margin-bottom:12px;overflow:hidden}
+  .section .hd{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;background:#fff;cursor:pointer}
+  .section .hd .t{font-weight:800}
+  .section .items{padding:4px 16px 12px}
+  .item{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+  .item:last-child{border-bottom:0}
+  .box{width:18px;height:18px;border-radius:5px;border:2px solid var(--line);flex:0 0 auto;display:flex;align-items:center;justify-content:center;font-size:12px;color:#fff}
+  .box.done{background:var(--green);border-color:var(--green)}
+  .item.done .lab{color:var(--muted);text-decoration:line-through}
+  .miniprog{font-size:12px;color:var(--muted);font-weight:700}
+  /* schools */
+  .schools{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+  .school{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}
+  .school .nm{font-weight:800;font-size:15px}
+  .school .loc{font-size:12px;color:var(--muted);margin-bottom:10px}
+  .fit{display:flex;align-items:center;gap:8px;margin:8px 0}
+  .fit .n{font-weight:900;color:var(--red)}
+  .attrs{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+  .chip{display:inline-block;background:var(--cream-2);border:1px solid var(--line);border-radius:999px;padding:2px 9px;font-size:11.5px;font-weight:700}
+  .chip.green{background:#e6f5ec;border-color:#bfe3cd;color:var(--green)}
+  .chip.navy{background:#eaf0ff;border-color:#c9d6f5;color:var(--navy)}
+  .chip.red{background:var(--red-soft);border-color:#f6c6ca;color:#8f1119}
+  .insight{margin-top:10px;background:var(--cream-2);border:1px dashed var(--line);border-radius:8px;padding:8px 10px;font-size:12px}
+  .insight b{color:var(--navy)}
+  .row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+  .row:last-child{border-bottom:0}.row .lab{color:var(--muted)}.row .val{font-weight:700}
+  .li{display:flex;gap:12px;padding:11px 0;border-bottom:1px dashed var(--line)}
+  .li:last-child{border-bottom:0}
+  .li .d{width:44px;text-align:center;flex:0 0 auto}
+  .li .d .day{font-size:18px;font-weight:900;line-height:1}.li .d .mo{font-size:10px;text-transform:uppercase;color:var(--muted)}
+  .li .nm{font-weight:700}.li .mt{font-size:12px;color:var(--muted)}
+  .btn{display:inline-flex;align-items:center;gap:7px;background:var(--red);color:#fff;border:none;border-radius:9px;padding:9px 14px;font-weight:700;cursor:pointer;font-size:13px;text-decoration:none}
+  .btn.ghost{background:#fff;border:1px solid var(--line);color:var(--navy)}
+  .res{border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:10px}
+  .res h3{margin:0 0 4px;font-size:14px}.res p{margin:0;color:var(--muted);font-size:12.5px}
+  .foot{text-align:center;color:var(--muted);font-size:12px;padding:24px}
+  textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:12px;font-family:inherit;font-size:13.5px;color:var(--text);min-height:150px}
+</style>
+</head>
+<body>
+  <div class="top">
+    <div class="brand">
+      <svg class="chev" viewBox="0 0 64 64"><path d="M8 50 L32 16 L56 50" fill="none" stroke="#E11D2A" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="name display">Dual&nbsp;Rise <span style="font-style:normal;font-weight:400;color:#9fb0d8;text-transform:none;letter-spacing:0;font-size:13px">· Player Dashboard</span></span>
+    </div>
+    <div class="who"><span>Matiej Reiter · <span style="color:#9fb0d8">Agent: J. Dupont</span></span><span class="me">MR</span></div>
+  </div>
+  <div class="tabs">
+    <button class="tab active" data-screen="checklist">Checklist</button>
+    <button class="tab" data-screen="schools">My Schools</button>
+    <button class="tab" data-screen="profile">Profile</button>
+    <button class="tab" data-screen="calendar">Calendar</button>
+    <button class="tab" data-screen="tasks">Tasks</button>
+    <button class="tab" data-screen="notes">Notes</button>
+    <button class="tab" data-screen="resources">Resources</button>
+  </div>
+
+  <div class="wrap">
+    <!-- CHECKLIST -->
+    <div class="screen active" id="checklist">
+      <h1 class="page display">Your recruiting checklist</h1>
+      <p class="lead">Everything to get you eligible and signed — tracked step by step with your agent.</p>
+      <div class="kpis">
+        <div class="kpi"><div class="k">Overall</div><div class="v red">62%</div></div>
+        <div class="kpi"><div class="k">Done</div><div class="v">18</div></div>
+        <div class="kpi"><div class="k">In progress</div><div class="v">5</div></div>
+        <div class="kpi"><div class="k">To do</div><div class="v">6</div></div>
+      </div>
+
+      <div class="section">
+        <div class="hd"><span class="t">Getting started</span><span class="miniprog">3 / 3 · 100%</span></div>
+        <div class="items">
+          <div class="item done"><span class="box done">✓</span><span class="lab">Welcome call with your agent</span></div>
+          <div class="item done"><span class="box done">✓</span><span class="lab">Complete the tennis questionnaire</span></div>
+          <div class="item done"><span class="box done">✓</span><span class="lab">Upload intro video</span></div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="hd"><span class="t">Academics & tests</span><span class="miniprog">3 / 4 · 75%</span></div>
+        <div class="items">
+          <div class="item done"><span class="box done">✓</span><span class="lab">Official transcript (translated to English)</span></div>
+          <div class="item done"><span class="box done">✓</span><span class="lab">GPA converted (3.38)</span></div>
+          <div class="item done"><span class="box done">✓</span><span class="lab">Duolingo English Test (130)</span></div>
+          <div class="item"><span class="box"></span><span class="lab">Reach school-average goal (45)</span></div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="hd"><span class="t">NCAA / NAIA eligibility</span><span class="miniprog">2 / 4 · 50%</span></div>
+        <div class="items">
+          <div class="item done"><span class="box done">✓</span><span class="lab">Register with the NCAA Eligibility Center</span></div>
+          <div class="item done"><span class="box done">✓</span><span class="lab">Register with NAIA</span></div>
+          <div class="item"><span class="box"></span><span class="lab">Submit amateurism questionnaire</span></div>
+          <div class="item"><span class="box"></span><span class="lab">Upload proof of amateurism (ITF/prize money)</span></div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="hd"><span class="t">Immigration (visa & embassy)</span><span class="miniprog">0 / 3 · 0%</span></div>
+        <div class="items">
+          <div class="item"><span class="box"></span><span class="lab">Receive I-20 from committed school</span></div>
+          <div class="item"><span class="box"></span><span class="lab">Pay SEVIS + book F-1 visa interview</span></div>
+          <div class="item"><span class="box"></span><span class="lab">Embassy appointment (Luxembourg)</span></div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="hd"><span class="t">Documents</span><span class="miniprog">2 / 3 · 67%</span></div>
+        <div class="items">
+          <div class="item done"><span class="box done">✓</span><span class="lab">Passport (valid 6+ months)</span></div>
+          <div class="item done"><span class="box done">✓</span><span class="lab">Translated diplomas</span></div>
+          <div class="item"><span class="box"></span><span class="lab">Bank statement / financial proof</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MY SCHOOLS -->
+    <div class="screen" id="schools">
+      <h1 class="page display">My schools</h1>
+      <p class="lead">Your target programs — fit scores, status, and what we've learned on coach calls.</p>
+      <div class="schools">
+        <div class="school">
+          <div class="nm">Riverside University</div>
+          <div class="loc">NCAA D1 · Riverside, CA · Coach Carter</div>
+          <div class="fit"><div class="prog" style="flex:1"><span style="width:88%"></span></div><span class="n">88%</span></div>
+          <div class="attrs"><span class="chip green">Offer</span><span class="chip navy">☀ Weather 8/10</span><span class="chip">City 20 min</span><span class="chip">Hard courts ×12</span></div>
+          <div class="insight"><b>Coach call:</b> wants a lefty at 2–3 singles, official visit offered for spring. Strong business program.</div>
+        </div>
+        <div class="school">
+          <div class="nm">Lakeland State</div>
+          <div class="loc">NCAA D1 · Tampa, FL · Coach Nguyen</div>
+          <div class="fit"><div class="prog" style="flex:1"><span style="width:82%"></span></div><span class="n">82%</span></div>
+          <div class="attrs"><span class="chip navy">Contacted</span><span class="chip navy">☀ Weather 9/10</span><span class="chip">City 15 min</span><span class="chip">Indoor + outdoor</span></div>
+          <div class="insight"><b>Coach call:</b> impressed by UTR trend; wants to see a full match. Warm climate, great facilities.</div>
+        </div>
+        <div class="school">
+          <div class="nm">Mountain Tech</div>
+          <div class="loc">NCAA D2 · Boulder, CO · Coach Alvarez</div>
+          <div class="fit"><div class="prog" style="flex:1"><span style="width:76%"></span></div><span class="n">76%</span></div>
+          <div class="attrs"><span class="chip">Interested</span><span class="chip navy">☀ Weather 6/10</span><span class="chip">Rural</span><span class="chip">Strong academics</span></div>
+          <div class="insight"><b>Coach call:</b> good scholarship room, altitude training. Further from a big city.</div>
+        </div>
+        <div class="school">
+          <div class="nm">Coastal College</div>
+          <div class="loc">NCAA D1 · Wilmington, NC · Coach Reed</div>
+          <div class="fit"><div class="prog" style="flex:1"><span style="width:79%"></span></div><span class="n">79%</span></div>
+          <div class="attrs"><span class="chip navy">Contacted</span><span class="chip navy">☀ Weather 8/10</span><span class="chip">Near ocean</span><span class="chip red">Budget tight</span></div>
+          <div class="insight"><b>Coach call:</b> likes the profile; scholarship depends on spring results.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROFILE -->
+    <div class="screen" id="profile">
+      <h1 class="page display">My profile</h1>
+      <p class="lead">Your tennis profile, synced from Scout — the same one coaches see.</p>
+      <div class="cols">
+        <div class="card">
+          <h2>Tennis <span class="accent">profile</span> <span style="font-weight:400;color:var(--muted);font-size:11px">· from Scout</span></h2>
+          <div class="row"><span class="lab">UTR / WTN</span><span class="val">11.60 / 20.50</span></div>
+          <div class="row"><span class="lab">National ranking</span><span class="val">#11 (Luxembourg)</span></div>
+          <div class="row"><span class="lab">ITF Junior</span><span class="val">818</span></div>
+          <div class="row"><span class="lab">Hand / Backhand</span><span class="val">Left · One-handed</span></div>
+          <div class="row"><span class="lab">Surface / Style</span><span class="val">Hard · Aggressive Baseliner</span></div>
+          <div class="row"><span class="lab">Height / Weight</span><span class="val">190 cm · 74 kg</span></div>
+          <div style="margin-top:14px"><a class="btn ghost" href="#">Open full profile in Scout →</a></div>
+        </div>
+        <div class="stack">
+          <div class="card">
+            <h2>Academics</h2>
+            <div class="row"><span class="lab">GPA</span><span class="val">3.38</span></div>
+            <div class="row"><span class="lab">Duolingo</span><span class="val">130</span></div>
+            <div class="row"><span class="lab">Major</span><span class="val">Economics</span></div>
+            <div class="row"><span class="lab">Entry</span><span class="val">Fall 2027</span></div>
+          </div>
+          <div class="card">
+            <h2>Settings</h2>
+            <div class="row"><span class="lab">Language</span><span class="val">English / Français</span></div>
+            <div class="row"><span class="lab">Family access</span><span class="val">2 members</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CALENDAR -->
+    <div class="screen" id="calendar">
+      <h1 class="page display">Calendar</h1>
+      <p class="lead">Deadlines, tournaments and calls — synced to your phone via iCal.</p>
+      <div class="card">
+        <div class="li"><div class="d"><div class="day">24</div><div class="mo">Jul</div></div><div><div class="nm">Call with Coach Carter (Riverside)</div><div class="mt">4:00 PM · Zoom</div></div></div>
+        <div class="li"><div class="d"><div class="day">28</div><div class="mo">Jul</div></div><div><div class="nm">ITF J60 Schifflange — main draw</div><div class="mt">Schifflange, LUX</div></div></div>
+        <div class="li"><div class="d"><div class="day">02</div><div class="mo">Aug</div></div><div><div class="nm">NCAA amateurism form due</div><div class="mt">Deadline</div></div></div>
+        <div class="li"><div class="d"><div class="day">15</div><div class="mo">Aug</div></div><div><div class="nm">Duolingo retake (target 135)</div><div class="mt">Optional</div></div></div>
+      </div>
+    </div>
+
+    <!-- TASKS -->
+    <div class="screen" id="tasks">
+      <h1 class="page display">Tasks</h1>
+      <p class="lead">Small action items assigned to you by your agent.</p>
+      <div class="card">
+        <div class="item"><span class="box"></span><span class="lab">Send 2 recent full-match videos to your agent</span></div>
+        <div class="item"><span class="box"></span><span class="lab">Confirm availability for Riverside official visit</span></div>
+        <div class="item done"><span class="box done">✓</span><span class="lab">Update UTR results link on profile</span></div>
+        <div class="item"><span class="box"></span><span class="lab">Upload bank statement for visa file</span></div>
+      </div>
+    </div>
+
+    <!-- NOTES -->
+    <div class="screen" id="notes">
+      <h1 class="page display">Notes</h1>
+      <p class="lead">Your tennis questionnaire — paste your answers here; your agent uses them across the process.</p>
+      <div class="card">
+        <textarea>Q: Playing style? — Aggressive baseliner, big lefty forehand, like to dictate.
+Q: Strengths? — Forehand, fitness/endurance, making opponents run.
+Q: Weaknesses? — Net game, serve consistency & speed, unforced errors.
+Q: Goals? — Davis Cup, ATP top 500, turn pro if possible.
+Q: Ideal college? — Strong competition + good economics program, near a big city, known state.
+Q: Personality? — Motivated, positive, determined, serious.</textarea>
+        <div style="margin-top:12px"><a class="btn" href="#">Save notes</a></div>
+      </div>
+    </div>
+
+    <!-- RESOURCES -->
+    <div class="screen" id="resources">
+      <h1 class="page display">Resources</h1>
+      <p class="lead">Guides to help you and your family through the US recruiting process.</p>
+      <div class="res"><h3>How US college tennis recruiting works</h3><p>Timeline, divisions (NCAA D1/D2/D3, NAIA, JUCO), and how Dual Rise supports you.</p></div>
+      <div class="res"><h3>NCAA & NAIA eligibility, step by step</h3><p>Registering, amateurism, academic requirements, and key deadlines.</p></div>
+      <div class="res"><h3>Understanding UTR & WTN for college</h3><p>What ratings coaches look for by division, and how to improve yours.</p></div>
+      <div class="res"><h3>Visa & arrival checklist</h3><p>I-20, SEVIS, the F-1 interview, and what to bring to the embassy.</p></div>
+    </div>
+
+    <div class="foot">Player Dashboard by Dual Rise — demo data: Matiej Reiter. Bilingual (EN / FR).</div>
+  </div>
+
+<script>
+  document.querySelectorAll('.tab').forEach(function(b){
+    b.addEventListener('click',function(){
+      var id=b.getAttribute('data-screen');
+      document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('active')});
+      document.querySelectorAll('.screen').forEach(function(s){s.classList.remove('active')});
+      b.classList.add('active');document.getElementById(id).classList.add('active');
+      window.scrollTo({top:0,behavior:'smooth'});
+    });
+  });
+  // toggle checklist boxes
+  document.querySelectorAll('.item').forEach(function(it){
+    it.addEventListener('click',function(){
+      var box=it.querySelector('.box');
+      it.classList.toggle('done');
+      if(it.classList.contains('done')){box.classList.add('done');box.textContent='✓';}
+      else{box.classList.remove('done');box.textContent='';}
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Dual Rise">
+  <rect width="64" height="64" rx="14" fill="#0B1D58"/>
+  <path d="M14 44 L24 26 L34 44" fill="none" stroke="#E11D2A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="32" y="52" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="900" font-style="italic" fill="#FFFFFF">DR</text>
+</svg>

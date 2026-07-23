@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* USAP brand palette — aligned with the player dashboard (navy / orange / cream) */
+    /* Dual Rise brand palette — bleu (navy) primary / rouge accent / cream */
+    --usap-blue: 226 78% 19%;        /* navy   #0B1D58 */
+    --usap-orange: 356 77% 50%;      /* rouge  #E11D2A (Dual Rise accent) */
+    --usap-blue-dark: 227 79% 15%;   /* #081545 */
+    --usap-blue-light: 226 75% 30%;  /* navy-bright #132F88 */
+    --usap-orange-light: 356 77% 62%;
+    --usap-gray: 220 9% 46%;         /* muted #6B7280 */
+    --usap-gray-light: 45 27% 94%;   /* cream-2 #F4F2EC */
+
+    /* Base colors */
+    --background: 60 23% 97%;        /* cream #FAFAF7 */
+    --foreground: 226 78% 19%;       /* navy */
+
+    --card: 0 0% 100%;
+    --card-foreground: 226 78% 19%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 226 78% 19%;
+
+    --primary: 226 78% 19%;          /* navy */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 356 77% 50%;        /* rouge */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 45 27% 94%;             /* cream-2 */
+    --muted-foreground: 220 9% 46%;  /* muted gray */
+
+    --accent: 226 75% 30%;           /* navy-bright */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 45 19% 87%;            /* line #E5E2D9 */
+    --input: 45 19% 87%;
+    --ring: 356 77% 50%;             /* rouge focus ring */
+
+    --radius: 0.75rem;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--usap-blue)), hsl(var(--usap-blue-light)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--usap-orange)), hsl(var(--usap-orange-light)));
+    --gradient-hero: linear-gradient(180deg, hsl(var(--usap-blue-dark)) 0%, hsl(var(--usap-blue)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100% / 0.9), hsl(0 0% 100% / 0.95));
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 8px hsl(215 67% 25% / 0.08);
+    --shadow-md: 0 4px 16px hsl(215 67% 25% / 0.12);
+    --shadow-lg: 0 8px 32px hsl(215 67% 25% / 0.16);
+    --shadow-xl: 0 16px 48px hsl(215 67% 25% / 0.2);
+    
+    /* Animations */
+    --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 226 78% 19%;        /* navy */
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 226 78% 19%;
+    --sidebar-accent: 226 75% 30%;            /* navy-bright */
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 227 79% 15%;            /* navy-dark */
+    --sidebar-ring: 356 77% 50%;              /* rouge */
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    /* Match the player dashboard font stack */
+    font-family: -apple-system, "Inter", system-ui, sans-serif;
+  }
+
+  /* Brand heading style (italic / heavy / uppercase), as on the player dashboard */
+  .display {
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+}

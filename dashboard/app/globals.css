@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+:root {
+  /* Dual Rise brand — bleu (navy) primary / rouge accent (remapped from orange) */
+  --navy: #0B1D58;
+  --navy-bright: #132F88;
+  --orange: #E11D2A;
+  --orange-soft: #FDE7E9;
+  --cream: #FAFAF7;
+  --cream-2: #F4F2EC;
+  --line: #E5E2D9;
+  --text: #0B1D58;
+  --muted: #6B7280;
+  --green: #10B981;
+  --red: #EF4444;
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-navy-bright: var(--navy-bright);
+  --color-orange: var(--orange);
+  --color-orange-soft: var(--orange-soft);
+  --color-cream: var(--cream);
+  --color-cream-2: var(--cream-2);
+  --color-line: var(--line);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-green: var(--green);
+  --color-red: var(--red);
+  --font-sans: -apple-system, "Inter", system-ui, sans-serif;
+}
+
+body {
+  background: var(--cream);
+  color: var(--text);
+  font-family: var(--font-sans);
+}
+
+.display {
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+/* Keep horizontal scroll functional but hide the scrollbar chrome
+   (used by the top nav tab bar). */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.prose-page {
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.65;
+}
+.prose-page h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+  margin: 0 0 0.5rem 0;
+}
+.prose-page h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 2rem 0 0.5rem 0;
+}
+.prose-page h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 1.5rem 0 0.5rem 0;
+}
+.prose-page p {
+  margin: 0.75rem 0;
+}
+.prose-page ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin: 0.75rem 0;
+}
+.prose-page li {
+  margin: 0.25rem 0;
+}
+.prose-page strong {
+  font-weight: 700;
+  color: var(--navy);
+}
+.prose-page a {
+  color: var(--orange);
+  text-decoration: underline;
+}
+.prose-page hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 2rem 0;
+}
+.prose-page .meta {
+  color: var(--muted);
+  font-size: 13px;
+  margin-bottom: 1.5rem;
+}

@@ -1,0 +1,225 @@
+{
+  "nav": {
+    "schools": "My schools",
+    "calendar": "Calendar",
+    "checklist": "Checklist",
+    "tasks": "Tasks",
+    "notes": "Notes",
+    "resources": "Resources",
+    "profile": "Profile"
+  },
+  "common": {
+    "back": "Back",
+    "save": "Save",
+    "cancel": "Cancel",
+    "loading": "Loading…",
+    "openDashboard": "Open my dashboard",
+    "playerNotFound": "Player profile not found.",
+    "playerNotFoundFor": "Player profile not found for {email}.",
+    "returnHome": "Back"
+  },
+  "schools": {
+    "welcome": "Welcome, {name} 👋",
+    "subtitle": "Here is an overview of your USAP journey",
+    "compareCta": "Compare my schools",
+    "sheetCta": "My school list",
+    "synced": "Synced with your agent",
+    "briefingBanner": {
+      "title": "Prepare for your coach call",
+      "subtitle": "your agent has prepared a brief for you",
+      "open": "Open →"
+    }
+  },
+  "calendar": {
+    "title": "Calendar",
+    "prevMonth": "← Previous month",
+    "nextMonth": "Next month →",
+    "upcoming": "Upcoming events",
+    "empty": "Nothing coming up.",
+    "synced": "🔄 Synced with your agent",
+    "sync": {
+      "title": "Sync your calendar",
+      "subtitle": "Stay up to date on your phone / Google Calendar / iCal.",
+      "google": "📅 Add to Google Calendar",
+      "apple": "🍎 Add to iCal (iPhone/Mac)",
+      "copy": "📋 Copy iCal link (.ics)",
+      "copied": "✓ Link copied!"
+    },
+    "type": {
+      "call": "Call",
+      "callLong": "Coach call",
+      "tournament": "Tournament",
+      "deadline": "Deadline",
+      "admin": "Admin"
+    },
+    "modal": {
+      "addTitle": "Add an event",
+      "editTitle": "Edit event",
+      "fieldTitle": "Title",
+      "fieldType": "Type",
+      "fieldDate": "Date",
+      "fieldTime": "Time",
+      "fieldTimezone": "Timezone",
+      "fieldDescription": "Description",
+      "save": "Save",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "deleteConfirm": "Delete \"{title}\"?",
+      "syncedNotice": "🔄 Synced with your agent"
+    }
+  },
+  "tasks": {
+    "title": "My tasks",
+    "helper": "💡 Tasks assigned by your agent appear here. Tick them off once done so they get notified.",
+    "empty": "No tasks yet. Check back later!",
+    "todo": "To do",
+    "done": "Done",
+    "assignedBy": "Assigned by {name}",
+    "doneOn": "Done on {date}"
+  },
+  "notes": {
+    "title": "Notes from my agent",
+    "helper": "💡 Messages, context and follow-ups sent by your agent. Your parents can see these too.",
+    "empty": "No notes yet."
+  },
+  "parcours": {
+    "title": "My US golf & study journey",
+    "subtitle": "Overview of the 7 phases of your project, from the USAP contract to arrival on campus.",
+    "youLeaveIn": "You leave in ",
+    "inProgress": "In progress",
+    "phases": {
+      "acquisition": {
+        "label": "Onboarding & contract",
+        "period": "Year N-2 — Sept to Oct",
+        "description": "First contact with USAP, contract signed, first deposit paid. Project officially kicked off."
+      },
+      "profile": {
+        "label": "Profile creation",
+        "period": "Year N-2 — Oct to Nov",
+        "description": "Full questionnaire, swing videos, HD photo, recruiting highlight reel, SCOUT profile built. This is your calling card for coaches."
+      },
+      "recruiting": {
+        "label": "Active recruiting",
+        "period": "Year N-2 — Nov to Mar (N-1)",
+        "description": "Your agent sends your profile to target schools and handles follow-ups. You start calls with interested coaches. The longest and most intense phase."
+      },
+      "offers": {
+        "label": "Offers & negotiation",
+        "period": "Year N-1 — Mar to Jun",
+        "description": "First offers come in. Compare schools (cost, location, fit, level). Optional visits. Negotiate scholarships."
+      },
+      "commitment": {
+        "label": "Commitment & signing",
+        "period": "Year N-1 — Jun to Nov",
+        "description": "Final choice, verbal commit on Instagram, NLI signed in November (early signing) or April (regular). It's official."
+      },
+      "admin": {
+        "label": "Visa & admin",
+        "period": "Year N — May to Jul",
+        "description": "I-20 from the school, SEVIS fee, DS-160 form, Paris embassy interview for the F-1 visa. Housing, insurance and flights ready."
+      },
+      "departure": {
+        "label": "Departure & US arrival",
+        "period": "Year N — August",
+        "description": "Off to the US! First month on campus: bank account, SSN, phone plan, team integration, first classes."
+      }
+    }
+  },
+  "welcomeModal": {
+    "title": "Welcome {firstName} 👋",
+    "intro": "This dashboard centralizes your USAP recruiting journey:",
+    "bullets": [
+      "📚 Your target universities",
+      "✅ Your admin checklist (visa, INCRED, English tests…)",
+      "📝 Notes and advice from your agent",
+      "📅 Your deadlines and tasks"
+    ],
+    "privacy": "🔒 Your data is stored in Europe and handled per the terms of your signed USAP contract.",
+    "learnMore": "Learn more →",
+    "saving": "Saving…",
+    "ok": "Got it"
+  },
+  "resources": {
+    "title": "Resources",
+    "subtitle": "Everything you need to understand before and during your US project",
+    "readArticle": "Read article →",
+    "back": "← Resources",
+    "lastUpdated": "Last updated",
+    "by": "by",
+    "rankingImpact": {
+      "title": "Ranking & Impact Table",
+      "description": "How French players transition to the US based on their national ranking",
+      "open": "Open table →"
+    },
+    "interviewPrep": {
+      "title": "My interview prep",
+      "subtitle": "Custom notes from your agent — read before your next coach calls.",
+      "empty": "No personalized prep yet.",
+      "emptyHint": "Your agent will add the questions and key points to highlight before your next coach calls here.",
+      "readGuide": "In the meantime, read the communication guide →"
+    },
+    "commsCoachBanner": "You have a personalized prep for your recruiting.",
+    "seePrep": "See your prep →"
+  },
+  "briefings": {
+    "header": "Coach call brief",
+    "dashboard": "Dashboard"
+  },
+  "compare": {
+    "back": "My schools",
+    "selectTitle": "Compare my schools",
+    "selectSubtitle": "Pick 2 or 3 schools from your pipeline to compare side-by-side.",
+    "selectInstructions": "Select 2 or 3 schools to compare.",
+    "compareBtn": "Compare",
+    "emptyPipeline": "You don't have any schools in your pipeline yet. Add some from \"My schools\".",
+    "title": "Compare my schools",
+    "subtitleN": "{count} schools side-by-side.",
+    "changeSelection": "← Change selection",
+    "discussWithAgent": "✉️ Discuss with my agent",
+    "rows": {
+      "criterion": "Criterion",
+      "division": "Division",
+      "ranking": "Ranking",
+      "state": "State",
+      "city": "City",
+      "coach": "Coach",
+      "website": "Official site",
+      "scoreboard": "Scoreboard",
+      "niche": "Niche",
+      "instagram": "Instagram",
+      "minBudget": "Min budget after aid",
+      "tuition": "Tuition",
+      "distanceToGolf": "Distance to golf",
+      "indoor": "Indoor facilities",
+      "weather": "Weather / Climate",
+      "dorms": "Dorm quality",
+      "religious": "Religious",
+      "stage": "Pipeline stage"
+    },
+    "stage": {
+      "interested": "Interested",
+      "talks": "In talks",
+      "offer": "Offer"
+    }
+  },
+  "profile": {
+    "title": "Profile",
+    "language": {
+      "title": "Language / Langue",
+      "subtitle": "Pick the language you want for the dashboard. This also switches your call briefs and translated articles.",
+      "fr": "🇫🇷 Français",
+      "en": "🇬🇧 English",
+      "saving": "Saving…",
+      "saved": "Preference saved"
+    }
+  },
+  "checklist": {
+    "sections": {
+      "profile_golf": "Golf profile",
+      "academic": "Academic profile",
+      "admin": "University admin",
+      "visa": "F-1 visa",
+      "arrival": "Plan my arrival in the US"
+    }
+  }
+}

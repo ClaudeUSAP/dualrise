@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 64" role="img" aria-label="Dual Rise">
+  <!-- upward chevron = the "rise" -->
+  <path d="M12 48 L30 20 L48 48" fill="none" stroke="#E11D2A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="62" y="47" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="900" font-style="italic" letter-spacing="-1" fill="#FFFFFF">DUAL RISE</text>
+</svg>

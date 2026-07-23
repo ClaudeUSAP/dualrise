@@ -1,0 +1,225 @@
+{
+  "nav": {
+    "schools": "Mes écoles",
+    "calendar": "Calendrier",
+    "checklist": "Checklist",
+    "tasks": "Tâches",
+    "notes": "Notes",
+    "resources": "Ressources",
+    "profile": "Profil"
+  },
+  "common": {
+    "back": "Retour",
+    "save": "Sauvegarder",
+    "cancel": "Annuler",
+    "loading": "Chargement…",
+    "openDashboard": "Ouvrir mon dashboard",
+    "playerNotFound": "Profil joueur introuvable.",
+    "playerNotFoundFor": "Profil joueur introuvable pour {email}.",
+    "returnHome": "Retour"
+  },
+  "schools": {
+    "welcome": "Bienvenue, {name} 👋",
+    "subtitle": "Voici un aperçu de ton parcours USAP",
+    "compareCta": "Comparer mes facs",
+    "sheetCta": "Ma liste de facs",
+    "synced": "Synchronisé avec ton agent",
+    "briefingBanner": {
+      "title": "Prépare ton call coach",
+      "subtitle": "ton agent t'a préparé un brief",
+      "open": "Ouvrir →"
+    }
+  },
+  "calendar": {
+    "title": "Calendrier",
+    "prevMonth": "← Mois précédent",
+    "nextMonth": "Mois suivant →",
+    "upcoming": "Prochains événements",
+    "empty": "Rien à venir.",
+    "synced": "🔄 Synchronisé avec ton agent",
+    "sync": {
+      "title": "Synchroniser ton calendrier",
+      "subtitle": "Reste à jour sur ton téléphone / Google Calendar / iCal.",
+      "google": "📅 Ajouter à Google Calendar",
+      "apple": "🍎 Ajouter à iCal (iPhone/Mac)",
+      "copy": "📋 Copier lien iCal (.ics)",
+      "copied": "✓ Lien copié !"
+    },
+    "type": {
+      "call": "Call",
+      "callLong": "Call coach",
+      "tournament": "Tournoi",
+      "deadline": "Deadline",
+      "admin": "Admin"
+    },
+    "modal": {
+      "addTitle": "Ajouter un événement",
+      "editTitle": "Modifier un événement",
+      "fieldTitle": "Titre",
+      "fieldType": "Type",
+      "fieldDate": "Date",
+      "fieldTime": "Heure",
+      "fieldTimezone": "Fuseau",
+      "fieldDescription": "Description",
+      "save": "Sauvegarder",
+      "cancel": "Annuler",
+      "delete": "Supprimer",
+      "deleteConfirm": "Supprimer « {title} » ?",
+      "syncedNotice": "🔄 Synchronisé avec ton agent"
+    }
+  },
+  "tasks": {
+    "title": "Mes tâches",
+    "helper": "💡 Les tâches assignées par ton agent apparaissent ici. Coche-les dès qu'elles sont faites pour qu'il soit notifié.",
+    "empty": "Aucune tâche pour le moment. Reviens plus tard !",
+    "todo": "À faire",
+    "done": "Terminées",
+    "assignedBy": "Assignée par {name}",
+    "doneOn": "Faite le {date}"
+  },
+  "notes": {
+    "title": "Notes de mon agent",
+    "helper": "💡 Messages, contextes et points de suivi envoyés par ton agent. Tes parents peuvent aussi les voir.",
+    "empty": "Aucune note pour le moment."
+  },
+  "parcours": {
+    "title": "Mon parcours golf-études aux US",
+    "subtitle": "Vue d'ensemble des 7 phases de ton projet, du contrat USAP à l'arrivée sur le campus.",
+    "youLeaveIn": "Tu pars en ",
+    "inProgress": "En cours",
+    "phases": {
+      "acquisition": {
+        "label": "Acquisition & contrat",
+        "period": "Année N-2 — Sept à Oct",
+        "description": "Premier contact avec USAP, signature du contrat, paiement du 1er acompte. Lancement officiel du projet."
+      },
+      "profile": {
+        "label": "Création du profil",
+        "period": "Année N-2 — Oct à Nov",
+        "description": "Questionnaire complet, vidéos de swing, photo HD, montage vidéo recrutement, profil SCOUT créé. C'est ta carte de visite pour les coachs."
+      },
+      "recruiting": {
+        "label": "Recrutement actif",
+        "period": "Année N-2 — Nov à Mars (N-1)",
+        "description": "Ton agent envoie ton profil aux facs ciblées, gère les follow-ups. Tu commences les calls avec les coachs intéressés. Phase la plus longue et intense."
+      },
+      "offers": {
+        "label": "Offres & négociation",
+        "period": "Année N-1 — Mars à Juin",
+        "description": "Premières offres reçues. Comparaison des facs (cost, location, fit, niveau). Visites éventuelles. Négociation des bourses."
+      },
+      "commitment": {
+        "label": "Commitment & signature",
+        "period": "Année N-1 — Juin à Novembre",
+        "description": "Choix final, commitment verbal annoncé sur Instagram, signature du NLI en novembre (early signing) ou avril (regular). C'est officiel."
+      },
+      "admin": {
+        "label": "Visa & admin",
+        "period": "Année N — Mai à Juillet",
+        "description": "I-20 reçu de la fac, paiement SEVIS, formulaire DS-160, RDV ambassade Paris pour le visa F-1. Préparation logement, assurance, vols."
+      },
+      "departure": {
+        "label": "Départ & arrivée US",
+        "period": "Année N — Août",
+        "description": "Départ pour les US ! Premier mois sur place : arrivée au campus, ouverture compte bancaire, SSN, phone plan, intégration équipe, premiers cours."
+      }
+    }
+  },
+  "welcomeModal": {
+    "title": "Bienvenue {firstName} 👋",
+    "intro": "Ce dashboard centralise ton parcours de recrutement USAP :",
+    "bullets": [
+      "📚 Tes universités cibles",
+      "✅ Ta checklist administrative (visa, INCRED, tests d'anglais…)",
+      "📝 Les notes et conseils de ton agent",
+      "📅 Tes échéances et tâches"
+    ],
+    "privacy": "🔒 Tes données sont hébergées en Europe et traitées selon les termes de ton contrat USAP signé.",
+    "learnMore": "En savoir plus →",
+    "saving": "Enregistrement…",
+    "ok": "J'ai compris"
+  },
+  "resources": {
+    "title": "Ressources",
+    "subtitle": "Tout ce qu'il faut comprendre avant et pendant ton projet US",
+    "readArticle": "Lire l'article →",
+    "back": "← Ressources",
+    "lastUpdated": "Dernière mise à jour",
+    "by": "par",
+    "rankingImpact": {
+      "title": "Tableau Ranking & Impact",
+      "description": "Comment les joueurs français se placent aux États-Unis en fonction de leur ranking national",
+      "open": "Ouvrir le tableau →"
+    },
+    "interviewPrep": {
+      "title": "Ma préparation entretien",
+      "subtitle": "Notes personnalisées par ton agent — à lire avant tes prochains appels coachs.",
+      "empty": "Aucune préparation personnalisée pour le moment.",
+      "emptyHint": "Ton agent ajoutera ici les questions et points à mettre en avant avant tes prochains appels coachs.",
+      "readGuide": "En attendant, lis le guide communication →"
+    },
+    "commsCoachBanner": "Tu as une préparation personnalisée pour ton recrutement.",
+    "seePrep": "Voir ta prep →"
+  },
+  "briefings": {
+    "header": "Préparation call coach",
+    "dashboard": "Dashboard"
+  },
+  "compare": {
+    "back": "Mes écoles",
+    "selectTitle": "Comparer mes facs",
+    "selectSubtitle": "Choisis 2 ou 3 facs de ta pipeline pour les mettre côte à côte.",
+    "selectInstructions": "Sélectionne 2 ou 3 facs à comparer.",
+    "compareBtn": "Comparer",
+    "emptyPipeline": "Tu n'as encore aucune fac dans ta pipeline. Ajoute-les depuis « Mes écoles ».",
+    "title": "Comparer mes facs",
+    "subtitleN": "{count} facs côte à côte.",
+    "changeSelection": "← Changer ma sélection",
+    "discussWithAgent": "✉️ Discuter avec mon agent",
+    "rows": {
+      "criterion": "Critère",
+      "division": "Division",
+      "ranking": "Ranking",
+      "state": "État",
+      "city": "Ville",
+      "coach": "Coach",
+      "website": "Site officiel",
+      "scoreboard": "Scoreboard",
+      "niche": "Niche",
+      "instagram": "Instagram",
+      "minBudget": "Budget min après aide",
+      "tuition": "Tuition",
+      "distanceToGolf": "Distance to golf",
+      "indoor": "Indoor facilities",
+      "weather": "Climat / Météo",
+      "dorms": "Qualité des dorms",
+      "religious": "Religieuse",
+      "stage": "Stage pipeline"
+    },
+    "stage": {
+      "interested": "Intéressé",
+      "talks": "En échange",
+      "offer": "Offre"
+    }
+  },
+  "profile": {
+    "title": "Profil",
+    "language": {
+      "title": "Langue / Language",
+      "subtitle": "Choisis la langue dans laquelle tu veux voir le dashboard. Le toggle modifie aussi les briefs call et les articles traduits.",
+      "fr": "🇫🇷 Français",
+      "en": "🇬🇧 English",
+      "saving": "Sauvegarde…",
+      "saved": "Préférence sauvée"
+    }
+  },
+  "checklist": {
+    "sections": {
+      "profile_golf": "Profil Golfique",
+      "academic": "Profil Académique",
+      "admin": "Administratif Université",
+      "visa": "Visa F-1",
+      "arrival": "Planifier mon arrivée aux US"
+    }
+  }
+}
