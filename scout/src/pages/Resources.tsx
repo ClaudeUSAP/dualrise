@@ -366,11 +366,8 @@ export default function Resources() {
                       <CardDescription className="text-xs sm:text-sm">Athletes currently competing in the US</CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <Button variant="outline" className="w-full text-xs sm:text-sm" asChild>
-                        <a href="https://map.usathleticperformance.com/" target="_blank" rel="noopener noreferrer">
-                          View Dual Rise Players in the US
-                          <ExternalLink className="ml-2 h-3 w-3 sm:h-4 sm:w-4" />
-                        </a>
+                      <Button variant="outline" className="w-full text-xs sm:text-sm" disabled>
+                        Coming soon
                       </Button>
                     </CardContent>
                   </Card>
@@ -384,11 +381,8 @@ export default function Resources() {
                       <CardDescription className="text-xs sm:text-sm">Athletes who will be joining programs soon</CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <Button variant="outline" className="w-full text-xs sm:text-sm" asChild>
-                        <a href="https://map.usathleticperformance.com/#committed" target="_blank" rel="noopener noreferrer">
-                          View Dual Rise Players - Committed
-                          <ExternalLink className="ml-2 h-3 w-3 sm:h-4 sm:w-4" />
-                        </a>
+                      <Button variant="outline" className="w-full text-xs sm:text-sm" disabled>
+                        Coming soon
                       </Button>
                     </CardContent>
                   </Card>
@@ -402,17 +396,11 @@ export default function Resources() {
                       <CardDescription className="text-xs sm:text-sm">How French players are doing in the US and their national ranking at different stages</CardDescription>
                     </CardHeader>
                     <CardContent className="flex flex-col gap-2">
-                      <Button variant="outline" className="w-full text-xs sm:text-sm" asChild>
-                        <a href="https://story.usathleticperformance.com/" target="_blank" rel="noopener noreferrer">
-                          View Analysis
-                          <ExternalLink className="ml-2 h-3 w-3 sm:h-4 sm:w-4" />
-                        </a>
+                      <Button variant="outline" className="w-full text-xs sm:text-sm" disabled>
+                        Coming soon
                       </Button>
-                      <Button variant="outline" className="w-full text-xs sm:text-sm" asChild>
-                        <a href="https://docs.google.com/spreadsheets/d/1Mcc9AjokHmtEYoZo4QvHoQahL0-mdpTXiqAAu3azygU/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
-                          French Ranking Analysis Class of 2026-2027-2028 »
-                          <ExternalLink className="ml-2 h-3 w-3 sm:h-4 sm:w-4" />
-                        </a>
+                      <Button variant="outline" className="w-full text-xs sm:text-sm" disabled>
+                        Coming soon
                       </Button>
                     </CardContent>
                   </Card>

@@ -125,7 +125,6 @@ const AppSidebar = ({ variant = 'auto' }: { variant?: 'admin' | 'coach' | 'agent
     { title: "Data Import/Export", url: "/admin/data", icon: Database, badge: 0 },
     { title: "Users", url: "/admin/users", icon: UserCheck, badge: 0 },
     { title: "Resources", url: "/resources", icon: GraduationCap, badge: 0 },
-    { title: "Ranking & Impact Story", url: "https://story.usathleticperformance.com/", icon: TrendingUp, badge: 0, external: true, tooltip: "Coach/parent-facing narrative — how French players transition to the US" },
     { title: "System Settings", url: "/admin/settings", icon: Settings, badge: 0 },
   ];
 
@@ -136,7 +135,6 @@ const AppSidebar = ({ variant = 'auto' }: { variant?: 'admin' | 'coach' | 'agent
     { title: "Tournament Management", url: "/admin/tournaments", icon: Trophy, badge: 0 },
     { title: "Tournament Results", url: "/admin/tournament-results", icon: Trophy, badge: 0 },
     { title: "Resources", url: "/resources", icon: GraduationCap, badge: 0 },
-    { title: "Ranking & Impact Story", url: "https://story.usathleticperformance.com/", icon: TrendingUp, badge: 0, external: true, tooltip: "Coach/parent-facing narrative — how French players transition to the US" },
     { title: "System Settings", url: "/admin/settings", icon: Settings, badge: 0 },
   ];
 

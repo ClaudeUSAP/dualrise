@@ -32,7 +32,7 @@ const ShareProfileModal: React.FC<ShareProfileModalProps> = ({
   const getProductionOrigin = () => {
     const origin = window.location.origin;
     if (origin.includes('localhost') || origin.includes('127.0.0.1')) {
-      return 'https://scout.usathleticperformance.com';
+      return 'https://dualrise.vercel.app';
     }
     // Already on production or a custom domain — use the current origin
     return origin;

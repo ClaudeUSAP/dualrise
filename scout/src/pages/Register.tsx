@@ -166,13 +166,13 @@ const Register = () => {
         let statusMessage = "This email is already associated with an account. Please log in or use a different email address.";
         
         if (existingUser.status === 'rejected') {
-          statusMessage = "Your previous registration application was not approved. If you believe this is an error, please contact support@usathleticperformance.com.";
+          statusMessage = "Your previous registration application was not approved. If you believe this is an error, please contact nicplancha@gmail.com.";
         } else if (existingUser.status === 'pending') {
           statusMessage = "Your registration is still pending review. Please check your email for updates or contact support if you haven't heard back.";
         } else if (existingUser.status === 'active') {
           statusMessage = "This email is already registered with an active account. Please log in to access your account.";
         } else if (existingUser.status === 'suspended') {
-          statusMessage = "This account has been suspended. Please contact support@usathleticperformance.com for assistance.";
+          statusMessage = "This account has been suspended. Please contact nicplancha@gmail.com for assistance.";
         }
         
         toast({

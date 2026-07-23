@@ -15,7 +15,7 @@ const AccountSuspended = () => {
   };
 
   const handleContactSupport = () => {
-    window.location.href = "mailto:nicolas@usathleticperformance.com?subject=Account Suspension Inquiry";
+    window.location.href = "mailto:nicplancha@gmail.com?subject=Account Suspension Inquiry";
   };
 
   return (
@@ -74,7 +74,7 @@ const AccountSuspended = () => {
                 <span className="text-sm font-medium">Contact Support</span>
               </div>
               <p className="text-foreground font-semibold">
-                nicolas@usathleticperformance.com
+                nicplancha@gmail.com
               </p>
               <Button 
                 onClick={handleContactSupport}

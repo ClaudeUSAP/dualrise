@@ -91,8 +91,8 @@ const RegistrationSuccess = () => {
           <div>
             <p className="text-sm text-muted-foreground">
               Have questions? Contact us at{" "}
-              <a href="mailto:nicolas@usathleticperformance.com" className="text-primary hover:underline">
-                nicolas@usathleticperformance.com
+              <a href="mailto:nicplancha@gmail.com" className="text-primary hover:underline">
+                nicplancha@gmail.com
               </a>
             </p>
           </div>

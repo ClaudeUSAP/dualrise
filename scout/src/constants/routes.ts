@@ -8,4 +8,4 @@ export const AUTH_ROUTES = {
 } as const;
 
 /** Production domain for use in edge functions where window.location.origin is unavailable */
-export const PRODUCTION_URL = 'https://scout.usathleticperformance.com';
+export const PRODUCTION_URL = 'https://dualrise.vercel.app';

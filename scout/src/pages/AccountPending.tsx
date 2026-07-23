@@ -441,8 +441,8 @@ const AccountPending = () => {
               <div className="space-y-2">
                 <div className="flex items-center space-x-2">
                   <Mail className="h-4 w-4 text-primary" />
-                  <a href="mailto:nicolas@usathleticperformance.com" className="text-sm text-primary hover:underline">
-                    nicolas@usathleticperformance.com
+                  <a href="mailto:nicplancha@gmail.com" className="text-sm text-primary hover:underline">
+                    nicplancha@gmail.com
                   </a>
                 </div>
                 <div className="flex items-center space-x-2">

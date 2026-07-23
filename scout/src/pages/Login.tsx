@@ -251,7 +251,7 @@ const Login = () => {
               </p>
               <div className="flex items-center justify-center gap-3 text-xs">
                 <a 
-                  href="mailto:nicolas@usathleticperformance.com" 
+                  href="mailto:nicplancha@gmail.com" 
                   className="text-primary hover:underline inline-flex items-center gap-1"
                 >
                   <Mail className="h-3 w-3" />

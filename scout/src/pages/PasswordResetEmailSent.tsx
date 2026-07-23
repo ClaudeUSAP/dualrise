@@ -155,7 +155,7 @@ const PasswordResetEmailSent = () => {
           
           <p className="text-xs text-muted-foreground">
             Need immediate assistance? Contact Nico Paviet:{" "}
-            <a href="mailto:nicolas@usathleticperformance.com" className="text-primary hover:underline">
+            <a href="mailto:nicplancha@gmail.com" className="text-primary hover:underline">
               Email
             </a>
             {" | "}

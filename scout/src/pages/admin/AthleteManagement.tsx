@@ -98,7 +98,7 @@ import { Trash2 } from 'lucide-react';
 const getProductionOrigin = () => {
   const origin = window.location.origin;
   if (origin.includes('localhost') || origin.includes('127.0.0.1')) {
-    return 'https://scout.usathleticperformance.com';
+    return 'https://dualrise.vercel.app';
   }
   return origin;
 };

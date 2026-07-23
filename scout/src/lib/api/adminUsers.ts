@@ -272,7 +272,7 @@ export const sendPasswordResetEmail = async (userId: string): Promise<{ emailSen
   const { data, error } = await supabase.functions.invoke('send-password-reset-email', {
     body: {
       userEmail: userData.email,
-      frontendUrl: 'https://scout.usathleticperformance.com',
+      frontendUrl: 'https://dualrise.vercel.app',
       mode: 'link',
     },
   });
