@@ -1606,12 +1606,12 @@ const AddNewAthlete = () => {
                       />
                       <FormField
                         control={form.control}
-                        name="trackmanReportLink"
+                        name="utrProfileLink"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel>Trackman Report Link</FormLabel>
+                            <FormLabel>UTR profile link</FormLabel>
                             <FormControl>
-                              <Input placeholder="https://..." {...field} />
+                              <Input placeholder="https://app.utrsports.net/profiles/..." {...field} value={field.value ?? ''} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -1619,12 +1619,12 @@ const AddNewAthlete = () => {
                       />
                       <FormField
                         control={form.control}
-                        name="golfDataLink"
+                        name="wtnProfileLink"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel>Golf Data Link</FormLabel>
+                            <FormLabel>WTN profile link</FormLabel>
                             <FormControl>
-                              <Input placeholder="https://..." {...field} />
+                              <Input placeholder="https://worldtennisnumber.com/..." {...field} value={field.value ?? ''} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>

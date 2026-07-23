@@ -1252,11 +1252,11 @@ const mapResultToRow = (result: any) => {
                 />
               </div>
               <div>
-                <Label>Golf Team</Label>
+                <Label>Club / Academy</Label>
                 <Input 
                   value={athlete.currentSchool || ''}
                   onChange={(e) => handleFieldChange('currentSchool', e.target.value, 'personal')}
-                  placeholder="Country club or golf team name"
+                  placeholder="Club or academy name"
                 />
               </div>
             </div>

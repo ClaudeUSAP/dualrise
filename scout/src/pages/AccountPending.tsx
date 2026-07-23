@@ -408,7 +408,7 @@ const AccountPending = () => {
             <ul className="space-y-2">
               <li className="flex items-start space-x-2">
                 <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />
-                <span className="text-sm text-muted-foreground">Pre-vetted French golf athletes</span>
+                <span className="text-sm text-muted-foreground">Pre-vetted French & international tennis athletes</span>
               </li>
               <li className="flex items-start space-x-2">
                 <CheckCircle className="h-4 w-4 text-green-500 mt-0.5" />

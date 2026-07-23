@@ -280,7 +280,7 @@ const DemoAthleteDetail = () => {
                     <div className="grid grid-cols-2 gap-4">
                       {athlete.currentSchool && (
                         <div className="col-span-2 mb-2">
-                          <p className="text-sm text-muted-foreground mb-1">Golf Team</p>
+                          <p className="text-sm text-muted-foreground mb-1">Club / Academy</p>
                           <p className="text-xl font-semibold">{athlete.currentSchool}</p>
                         </div>
                       )}
