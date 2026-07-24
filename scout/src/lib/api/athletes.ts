@@ -240,9 +240,11 @@ export const listAthletes = async (): Promise<Athlete[]> => {
   return (data || []).map(athlete => mapDbAthleteToAthlete(athlete));
 };
 
-// Helper to check if string is a valid UUID
-const isUUID = (s: string) => 
-  /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(s);
+// Helper to check if string is a valid UUID.
+// Accepts any 8-4-4-4-12 hex UUID (what Postgres accepts) — NOT only RFC v1–5
+// with an [89ab] variant nibble, so non-canonical ids (e.g. seed 11111111-…) still resolve.
+const isUUID = (s: string) =>
+  /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(s);
 
 // Get athlete by ID or slug
 // PII masking is handled by the athletes_safe view at the database level

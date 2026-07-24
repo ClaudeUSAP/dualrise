@@ -121,8 +121,9 @@ const AppSidebar = ({ variant = 'auto' }: { variant?: 'admin' | 'coach' | 'agent
     { title: "Tournament Management", url: "/admin/tournaments", icon: Trophy, badge: 0 },
     { title: "Tournament Results", url: "/admin/tournament-results", icon: Trophy, badge: 0 },
     { title: "Contact Requests", url: "/admin/contact-requests", icon: Mail, badge: 0 },
-    { title: "Analytics & Reports", url: "/admin/analytics", icon: BarChart3, badge: 0 },
-    { title: "Data Import/Export", url: "/admin/data", icon: Database, badge: 0 },
+    // Masqués pour l'instant (peu utiles) — décommenter pour les réafficher :
+    // { title: "Analytics & Reports", url: "/admin/analytics", icon: BarChart3, badge: 0 },
+    // { title: "Data Import/Export", url: "/admin/data", icon: Database, badge: 0 },
     { title: "Users", url: "/admin/users", icon: UserCheck, badge: 0 },
     { title: "Resources", url: "/resources", icon: GraduationCap, badge: 0 },
     { title: "System Settings", url: "/admin/settings", icon: Settings, badge: 0 },
