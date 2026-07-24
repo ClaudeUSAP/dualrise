@@ -119,7 +119,7 @@ export async function GET(
 
     if (players.length === 0) {
       const body =
-        'BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//USAP Dashboard//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nEND:VCALENDAR\r\n'
+        'BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Dual Rise Dashboard//FR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nEND:VCALENDAR\r\n'
       return new NextResponse(body, {
         headers: {
           'Content-Type': 'text/calendar; charset=utf-8',
@@ -145,11 +145,11 @@ export async function GET(
     const lines: string[] = [
       'BEGIN:VCALENDAR',
       'VERSION:2.0',
-      'PRODID:-//USAP Dashboard//FR',
+      'PRODID:-//Dual Rise Dashboard//FR',
       'CALSCALE:GREGORIAN',
       'METHOD:PUBLISH',
-      fold(`NAME:USAP Planning agent - ${agentName}`),
-      fold(`X-WR-CALNAME:USAP Planning agent - ${agentName}`),
+      fold(`NAME:Dual Rise Planning agent - ${agentName}`),
+      fold(`X-WR-CALNAME:Dual Rise Planning agent - ${agentName}`),
       'X-WR-TIMEZONE:Europe/Paris',
     ]
 

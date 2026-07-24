@@ -50,7 +50,7 @@ export async function POST(request: Request) {
       playerId,
       schoolName,
       coachName: 'Greg Nye',
-      agentName: 'Camille (Agent USAP)',
+      agentName: 'Camille (Agent Dual Rise)',
       noteBody:
         'Call avec coach. Très intéressé par le profil. Demande à voir les 2 derniers résultats.',
     })

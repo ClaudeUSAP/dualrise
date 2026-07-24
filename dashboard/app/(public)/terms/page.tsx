@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Conditions générales d’utilisation — USAP',
+  title: 'Conditions générales d’utilisation — Dual Rise',
 }
 
 export default function TermsPage() {
@@ -14,17 +14,17 @@ export default function TermsPage() {
       <p>
         Le présent dashboard est un outil privé mis à disposition par US
         Athletic Performance Sàrl pour permettre aux Athlètes, à leurs
-        représentants légaux, et aux agents USAP de suivre le parcours de
+        représentants légaux, et aux agents Dual Rise de suivre le parcours de
         recrutement universitaire.
       </p>
 
       <h2>2. Accès</h2>
       <p>L&apos;accès est strictement réservé :</p>
       <ul>
-        <li>À l&apos;Athlète bénéficiaire d&apos;un contrat USAP en cours</li>
+        <li>À l&apos;Athlète bénéficiaire d&apos;un contrat Dual Rise en cours</li>
         <li>À ses parents ou représentants légaux</li>
-        <li>Aux agents USAP en charge de son dossier</li>
-        <li>Au fondateur USAP</li>
+        <li>Aux agents Dual Rise en charge de son dossier</li>
+        <li>Au fondateur Dual Rise</li>
       </ul>
       <p>
         L&apos;accès est nominatif et non-cessible. Toute tentative
@@ -53,27 +53,27 @@ export default function TermsPage() {
 
       <h2>5. Disponibilité</h2>
       <p>
-        Le service est fourni sur la base d&apos;un best-effort. USAP ne
+        Le service est fourni sur la base d&apos;un best-effort. Dual Rise ne
         garantit aucun SLA spécifique. Des interruptions ponctuelles peuvent
         survenir pour maintenance ou évolution.
       </p>
 
       <h2>6. Sanction</h2>
       <p>
-        En cas d&apos;usage abusif, USAP se réserve le droit de suspendre ou
+        En cas d&apos;usage abusif, Dual Rise se réserve le droit de suspendre ou
         résilier l&apos;accès au compte, sans préjudice des recours légaux.
       </p>
 
       <h2>7. Relation contractuelle</h2>
       <p>
-        Le contrat de prestation USAP signé entre les Parties demeure le
+        Le contrat de prestation Dual Rise signé entre les Parties demeure le
         document légal principal. Les présentes CGU complètent ce contrat pour
         ce qui concerne l&apos;usage du dashboard.
       </p>
 
       <h2>8. Modification</h2>
       <p>
-        USAP peut modifier ces CGU à tout moment. Les modifications
+        Dual Rise peut modifier ces CGU à tout moment. Les modifications
         substantielles seront notifiées aux utilisateurs.
       </p>
 

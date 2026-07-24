@@ -8,7 +8,7 @@ const STORAGE_KEY = 'usap_cookie_notice_seen_v1'
 /**
  * Info-only cookie banner.
  *
- * USAP n'utilise QUE des cookies strictement nécessaires (auth, préférences).
+ * Dual Rise n'utilise QUE des cookies strictement nécessaires (auth, préférences).
  * Aucun cookie publicitaire ni profilage tiers → un simple bandeau d'information suffit
  * en conformité avec la directive ePrivacy (pas de consentement requis pour les cookies
  * strictement nécessaires).

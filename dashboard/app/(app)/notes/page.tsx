@@ -79,7 +79,7 @@ export default async function PlayerNotesPage() {
             >
               <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
                 <span className="display text-sm text-navy">
-                  {n.author_name ?? 'USAP'}
+                  {n.author_name ?? 'Dual Rise'}
                 </span>
                 <span className="text-xs text-muted">
                   {DATE_FMT.format(new Date(n.created_at))}

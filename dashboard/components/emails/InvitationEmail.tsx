@@ -26,7 +26,7 @@ type Props = {
   loginUrl: string
 }
 
-const SUPPORT_EMAIL = 'nicolas@usathleticperformance.com'
+const SUPPORT_EMAIL = 'nicplancha@gmail.com'
 
 export function InvitationEmail({
   role,
@@ -38,11 +38,11 @@ export function InvitationEmail({
   loginUrl,
 }: Props) {
   const isPlayer = role === 'player'
-  const agent = agentName?.trim() || (isPlayer ? 'ton agent USAP' : 'votre agent USAP')
+  const agent = agentName?.trim() || (isPlayer ? 'ton agent Dual Rise' : 'votre agent Dual Rise')
 
   const title = isPlayer
-    ? 'Ton accès à ton espace USAP'
-    : "Votre accès à l'espace USAP de votre enfant"
+    ? 'Ton accès à ton espace Dual Rise'
+    : "Votre accès à l'espace Dual Rise de votre enfant"
 
   const greeting = isPlayer ? `Salut ${firstName},` : 'Bonjour,'
 
@@ -60,7 +60,7 @@ export function InvitationEmail({
       : `Ton agent ${agent} t’accompagnera tout au long du projet, avec moi.`
     : isFounder
       ? 'Je vous accompagnerai tout au long du projet.'
-      : `Votre agent USAP ${agent} vous accompagnera tout au long du projet, avec moi.`
+      : `Votre agent Dual Rise ${agent} vous accompagnera tout au long du projet, avec moi.`
 
   const contact = isPlayer
     ? isFounder

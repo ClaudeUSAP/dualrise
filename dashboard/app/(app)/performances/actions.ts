@@ -45,8 +45,8 @@ export async function suggestCorrection(
   `
 
   await sendEmail({
-    to: 'nicolas@usathleticperformance.com',
-    subject: `[USAP] Correction profil SCOUT — ${playerName} — ${fieldLabel}`,
+    to: 'nicplancha@gmail.com',
+    subject: `[Dual Rise] Correction profil SCOUT — ${playerName} — ${fieldLabel}`,
     html,
     templateKey: 'scout_correction',
     payload: { fieldKey, currentValue, suggestion },

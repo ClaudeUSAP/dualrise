@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Mentions légales — USAP',
+  title: 'Mentions légales — Dual Rise',
   description: 'Mentions légales de US Athletic Performance Sàrl.',
 }
 
@@ -26,8 +26,8 @@ export default function LegalPage() {
         <li>Téléphone : +1-872-279-0009</li>
         <li>
           Email :{' '}
-          <a href="mailto:nicolas@usathleticperformance.com">
-            nicolas@usathleticperformance.com
+          <a href="mailto:nicplancha@gmail.com">
+            nicplancha@gmail.com
           </a>
         </li>
         <li>
@@ -56,13 +56,13 @@ export default function LegalPage() {
 
       <h2>Propriété intellectuelle</h2>
       <p>
-        L&apos;ensemble des contenus présents sur les sites USAP (textes, images, vidéos, logo, charte graphique, architecture du site) sont la propriété exclusive de US Athletic Performance Sàrl ou de ses partenaires, et sont protégés par le droit suisse et international de la propriété intellectuelle.
+        L&apos;ensemble des contenus présents sur les sites Dual Rise (textes, images, vidéos, logo, charte graphique, architecture du site) sont la propriété exclusive de US Athletic Performance Sàrl ou de ses partenaires, et sont protégés par le droit suisse et international de la propriété intellectuelle.
       </p>
       <p>
-        Toute reproduction, représentation, modification, publication ou adaptation, totale ou partielle, des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de USAP.
+        Toute reproduction, représentation, modification, publication ou adaptation, totale ou partielle, des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de Dual Rise.
       </p>
       <p>
-        <strong>Photos et vidéos des athlètes</strong> : les photos et vidéos publiées proviennent de différentes sources (athlètes eux-mêmes, parents, USAP, photographes mandatés) et sont utilisées avec autorisation expresse via le contrat signé entre USAP et le représentant légal de chaque athlète (clause de droit à l&apos;image).
+        <strong>Photos et vidéos des athlètes</strong> : les photos et vidéos publiées proviennent de différentes sources (athlètes eux-mêmes, parents, Dual Rise, photographes mandatés) et sont utilisées avec autorisation expresse via le contrat signé entre Dual Rise et le représentant légal de chaque athlète (clause de droit à l&apos;image).
       </p>
       <p>
         Les noms, logos et marques des universités américaines et des fédérations sportives (NCAA, NAIA, FFGOLF, etc.) mentionnés sur les sites sont la propriété de leurs détenteurs respectifs. Leur utilisation s&apos;inscrit dans une démarche d&apos;information et n&apos;implique aucune affiliation ou partenariat sauf mention explicite.
@@ -70,15 +70,15 @@ export default function LegalPage() {
 
       <h2>Limitation de responsabilité</h2>
       <p>
-        USAP s&apos;efforce d&apos;assurer l&apos;exactitude et la mise à jour des informations diffusées sur ses sites. Toutefois, USAP ne saurait garantir l&apos;exactitude, la précision ou l&apos;exhaustivité des informations mises à disposition.
+        Dual Rise s&apos;efforce d&apos;assurer l&apos;exactitude et la mise à jour des informations diffusées sur ses sites. Toutefois, Dual Rise ne saurait garantir l&apos;exactitude, la précision ou l&apos;exhaustivité des informations mises à disposition.
       </p>
       <p>
-        Les sites peuvent contenir des liens hypertextes vers des sites tiers (universités, fédérations, médias). USAP n&apos;exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu.
+        Les sites peuvent contenir des liens hypertextes vers des sites tiers (universités, fédérations, médias). Dual Rise n&apos;exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu.
       </p>
 
       <h2>Loi applicable et juridiction</h2>
       <p>
-        La consultation et l&apos;utilisation des sites USAP sont régies par le <strong>droit suisse</strong>. Tout litige relatif à l&apos;utilisation des sites sera soumis à la compétence exclusive des <strong>tribunaux du Canton de Genève (Suisse)</strong>, sauf disposition légale impérative contraire.
+        La consultation et l&apos;utilisation des sites Dual Rise sont régies par le <strong>droit suisse</strong>. Tout litige relatif à l&apos;utilisation des sites sera soumis à la compétence exclusive des <strong>tribunaux du Canton de Genève (Suisse)</strong>, sauf disposition légale impérative contraire.
       </p>
       <p>
         Les consommateurs résidant dans l&apos;Union européenne conservent le bénéfice des dispositions impératives de leur droit national.
@@ -86,8 +86,8 @@ export default function LegalPage() {
 
       <h2>Crédits</h2>
       <ul>
-        <li>Conception et développement : équipe USAP</li>
-        <li>Photos et vidéos : USAP, athlètes (avec autorisation), parents, partenaires</li>
+        <li>Conception et développement : équipe Dual Rise</li>
+        <li>Photos et vidéos : Dual Rise, athlètes (avec autorisation), parents, partenaires</li>
         <li>Cartographie (map.usap) : basée sur les données publiques NCAA et les sources officielles des universités</li>
       </ul>
     </>

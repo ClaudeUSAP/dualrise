@@ -20,7 +20,7 @@
   },
   "schools": {
     "welcome": "Bienvenue, {name} 👋",
-    "subtitle": "Voici un aperçu de ton parcours USAP",
+    "subtitle": "Voici un aperçu de ton parcours Dual Rise",
     "compareCta": "Comparer mes facs",
     "sheetCta": "Ma liste de facs",
     "synced": "Synchronisé avec ton agent",
@@ -84,14 +84,14 @@
   },
   "parcours": {
     "title": "Mon parcours golf-études aux US",
-    "subtitle": "Vue d'ensemble des 7 phases de ton projet, du contrat USAP à l'arrivée sur le campus.",
+    "subtitle": "Vue d'ensemble des 7 phases de ton projet, du contrat Dual Rise à l'arrivée sur le campus.",
     "youLeaveIn": "Tu pars en ",
     "inProgress": "En cours",
     "phases": {
       "acquisition": {
         "label": "Acquisition & contrat",
         "period": "Année N-2 — Sept à Oct",
-        "description": "Premier contact avec USAP, signature du contrat, paiement du 1er acompte. Lancement officiel du projet."
+        "description": "Premier contact avec Dual Rise, signature du contrat, paiement du 1er acompte. Lancement officiel du projet."
       },
       "profile": {
         "label": "Création du profil",
@@ -127,14 +127,14 @@
   },
   "welcomeModal": {
     "title": "Bienvenue {firstName} 👋",
-    "intro": "Ce dashboard centralise ton parcours de recrutement USAP :",
+    "intro": "Ce dashboard centralise ton parcours de recrutement Dual Rise :",
     "bullets": [
       "📚 Tes universités cibles",
       "✅ Ta checklist administrative (visa, INCRED, tests d'anglais…)",
       "📝 Les notes et conseils de ton agent",
       "📅 Tes échéances et tâches"
     ],
-    "privacy": "🔒 Tes données sont hébergées en Europe et traitées selon les termes de ton contrat USAP signé.",
+    "privacy": "🔒 Tes données sont hébergées en Europe et traitées selon les termes de ton contrat Dual Rise signé.",
     "learnMore": "En savoir plus →",
     "saving": "Enregistrement…",
     "ok": "J'ai compris"

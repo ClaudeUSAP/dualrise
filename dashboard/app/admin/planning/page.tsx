@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
+import { APP_HOST } from '@/lib/site'
 import { NewCallButton } from './NewCallButton'
 
 export const dynamic = 'force-dynamic'
@@ -330,7 +331,7 @@ export default async function AdminPlanningPage({
             URL ». Le calendrier reste read-only et se met à jour automatiquement.
           </p>
           <code className="mt-2 block overflow-x-auto whitespace-nowrap rounded border border-line bg-white px-2 py-1 font-mono text-[11px] text-navy">
-            https://agent.usathleticperformance.com/api/ical/agent/
+            {APP_HOST}/api/ical/agent/
             {(agent as { ical_token?: string | null }).ical_token}
           </code>
         </section>

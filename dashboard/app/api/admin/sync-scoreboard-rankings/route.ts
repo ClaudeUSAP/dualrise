@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server'
 
 const BASE = 'https://scoreboard.clippd.com'
 const UA =
-  'Mozilla/5.0 (compatible; USAP-Sync/1.0; +https://usathleticperformance.com)'
+  'Mozilla/5.0 (compatible; DualRise-Sync/1.0; +https://dualrise.vercel.app)'
 
 type Gender = 'Men' | 'Women'
 type GoverningBody = 'NCAA' | 'NAIA' | 'NJCAA'

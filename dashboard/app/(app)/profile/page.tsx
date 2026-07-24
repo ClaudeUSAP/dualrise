@@ -10,7 +10,7 @@ import { createClient } from '@/lib/supabase/server'
 import { DigestOptIn } from './DigestOptIn'
 import { LanguagePicker } from './LanguagePicker'
 
-const SUPPORT_EMAIL = 'nicolas@usathleticperformance.com'
+const SUPPORT_EMAIL = 'nicplancha@gmail.com'
 
 // Read-only SCOUT value formatting
 function fmt(v: unknown): string {
@@ -20,10 +20,10 @@ function fmt(v: unknown): string {
 }
 
 const NICO_BIO =
-  'Fondateur USAP, ancien joueur D1, accompagne la stratégie globale et reste accessible à tous les joueurs.'
+  'Fondateur Dual Rise, ancien joueur D1, accompagne la stratégie globale et reste accessible à tous les joueurs.'
 
 const AGENT_BIO_FALLBACK =
-  'Ton agent USAP, qui accompagne la construction de ton dossier, la relation avec les coachs et le suivi du recrutement.'
+  'Ton agent Dual Rise, qui accompagne la construction de ton dossier, la relation avec les coachs et le suivi du recrutement.'
 
 function makeInitials(first: string | null, last: string | null): string {
   const f = (first ?? '').trim().charAt(0)
@@ -66,7 +66,7 @@ export default async function ProfilePage() {
     ? await getScoutProfile(player.scout_athlete_id)
     : null
 
-  // Real "Ton équipe USAP" — fetch the player's actual agent. Founder Nicolas
+  // Real "Ton équipe Dual Rise" — fetch the player's actual agent. Founder Nicolas
   // remains as a second card (project lead) unless he is also the player's
   // assigned agent, in which case we de-duplicate.
   type AgentRow = {
@@ -109,13 +109,13 @@ export default async function ProfilePage() {
   if (assignedAgent) {
     const name =
       `${assignedAgent.first_name ?? ''} ${assignedAgent.last_name ?? ''}`.trim() ||
-      'Ton agent USAP'
+      'Ton agent Dual Rise'
     team.push({
       initials: makeInitials(assignedAgent.first_name, assignedAgent.last_name),
       name,
       role:
         assignedAgent.role === 'founder'
-          ? 'Founder · USAP'
+          ? 'Founder · Dual Rise'
           : 'Agent · Recrutement',
       bio: assignedAgent.bio?.trim() || AGENT_BIO_FALLBACK,
       photoUrl: assignedAgent.photo_url ?? null,
@@ -129,7 +129,7 @@ export default async function ProfilePage() {
     team.push({
       initials: makeInitials(founderRow.first_name, founderRow.last_name),
       name,
-      role: 'Founder · USAP',
+      role: 'Founder · Dual Rise',
       bio: founderRow.bio?.trim() || NICO_BIO,
       photoUrl: founderRow.photo_url ?? null,
       contact: founderRow.email ? `mailto:${founderRow.email}` : null,
@@ -249,7 +249,7 @@ export default async function ProfilePage() {
         <div className="text-center">
           <Image
             src="/dualrise-logo-white.svg"
-            alt="USAP"
+            alt="Dual Rise"
             width={120}
             height={40}
             className="mx-auto h-auto w-[120px]"
@@ -337,7 +337,7 @@ export default async function ProfilePage() {
 
         {team.length > 0 && (
           <section>
-            <h3 className="display mb-3 text-sm text-navy">Ton équipe USAP</h3>
+            <h3 className="display mb-3 text-sm text-navy">Ton équipe Dual Rise</h3>
             <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
               {team.map((m) => (
                 <article

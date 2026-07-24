@@ -59,7 +59,7 @@ function CallbackInner() {
     <main className="flex flex-1 items-center justify-center bg-[#FAFAF7] px-6 py-16">
       <div className="w-full max-w-sm text-center">
         <h1 className="mb-4 text-3xl font-semibold tracking-tight text-[#0B1D58]">
-          USAP Dashboard
+          Dual Rise Dashboard
         </h1>
         {error ? (
           <p className="text-sm text-red-600">

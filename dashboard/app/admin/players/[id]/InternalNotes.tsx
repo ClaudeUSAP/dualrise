@@ -59,7 +59,7 @@ export function InternalNotes({
       <div className="mb-4 flex items-center justify-between">
         <div>
           <h2 className="display text-xl text-navy">🔒 Notes équipe</h2>
-          <p className="text-xs text-muted">Visibles uniquement par les agents et l'admin USAP. Pas par le joueur.</p>
+          <p className="text-xs text-muted">Visibles uniquement par les agents et l'admin Dual Rise. Pas par le joueur.</p>
         </div>
         <button
           type="button"

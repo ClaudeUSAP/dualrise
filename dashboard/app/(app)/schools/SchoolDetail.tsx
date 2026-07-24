@@ -1277,7 +1277,7 @@ function NotesSection({
             <p className="text-[10px] text-muted">
               {isAdmin
                 ? 'Partagée : visible par le joueur. Privée : seulement toi.'
-                : "Partagée : visible par l'agent USAP. Privée : visible par toi et l'admin USAP."}
+                : "Partagée : visible par l'agent Dual Rise. Privée : visible par toi et l'admin Dual Rise."}
             </p>
           </div>
           <div className="flex justify-end gap-2">

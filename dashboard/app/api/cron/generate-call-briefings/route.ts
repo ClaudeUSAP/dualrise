@@ -379,8 +379,8 @@ async function run() {
         const schoolName = school?.name ?? '(école non liée)'
         const subject =
           locale === 'en'
-            ? `[USAP] Coach call brief to validate — ${player.first_name} ${player.last_name} / ${schoolName} / ${dateLabel}`
-            : `[USAP] Brief call à valider — ${player.first_name} ${player.last_name} / ${schoolName} / ${dateLabel}`
+            ? `[Dual Rise] Coach call brief to validate — ${player.first_name} ${player.last_name} / ${schoolName} / ${dateLabel}`
+            : `[Dual Rise] Brief call à valider — ${player.first_name} ${player.last_name} / ${schoolName} / ${dateLabel}`
         const html = `<!doctype html><html><body style="background:#FAFAF7;margin:0;padding:24px;font-family:sans-serif;">
   <div style="max-width:600px;margin:0 auto;background:#fff;border-radius:8px;padding:32px;">
     <h1 style="margin:0 0 12px;color:#0B1D58;font-size:20px;">Brief call à valider — ${htmlEscape(player.first_name)} ${htmlEscape(player.last_name)}</h1>

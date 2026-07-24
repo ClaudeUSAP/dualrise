@@ -12,7 +12,8 @@ type SendEmailParams = {
   headers?: Record<string, string>
 }
 
-const FROM = 'USAP Dashboard <noreply@notifications.usathleticperformance.com>'
+// ⚠️ Domaine d'envoi à VÉRIFIER dans Resend une fois le domaine dualrise acheté (sinon les emails ne partent pas).
+const FROM = 'Dual Rise Dashboard <noreply@dualrise.app>'
 
 export async function sendEmail({
   to,

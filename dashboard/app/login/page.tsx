@@ -8,10 +8,10 @@ export default async function LoginPage() {
   const isPlayerDomain = host.startsWith('player.')
 
   const title = isAgentDomain
-    ? 'Connexion Agent USAP'
+    ? 'Connexion Agent Dual Rise'
     : isPlayerDomain
-      ? 'Connexion Joueur USAP'
-      : 'Connexion USAP'
+      ? 'Connexion Joueur Dual Rise'
+      : 'Connexion Dual Rise'
 
   const subtitle = isAgentDomain
     ? 'Entrez votre email pour accéder à votre roster'

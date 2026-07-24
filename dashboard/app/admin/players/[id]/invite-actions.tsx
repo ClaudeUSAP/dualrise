@@ -6,10 +6,10 @@ import { revalidatePath } from 'next/cache'
 import { InvitationEmail } from '@/components/emails/InvitationEmail'
 import { sendEmail } from '@/lib/email'
 import { findPlayerSheet } from '@/lib/google'
-import { LOGO_URL } from '@/lib/site'
+import { APP_HOST, LOGO_URL } from '@/lib/site'
 import { createClient } from '@/lib/supabase/server'
 
-const PLAYER_HOST = 'https://player.usathleticperformance.com'
+const PLAYER_HOST = APP_HOST
 
 function getAdminSupabase() {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL
@@ -94,8 +94,8 @@ async function sendPlayerMagicLink(
   return sendEmail({
     to: recipientEmail,
     subject: opts.isResend
-      ? `🔁 Ton lien USAP, ${opts.firstName}`
-      : `🎉 Bienvenue ${opts.firstName} - Ton dashboard USAP est prêt`,
+      ? `🔁 Ton lien Dual Rise, ${opts.firstName}`
+      : `🎉 Bienvenue ${opts.firstName} - Ton dashboard Dual Rise est prêt`,
     html,
     playerId: opts.playerId,
     templateKey: opts.isResend
@@ -368,7 +368,7 @@ export async function inviteCrmPlayer(
   const emailResult = await sendEmail({
     to: recipientEmail,
     cc,
-    subject: 'Ton accès à ton espace USAP',
+    subject: 'Ton accès à ton espace Dual Rise',
     html,
     playerId,
     templateKey: isResend ? 'player_invitation_resend' : 'player_invitation',

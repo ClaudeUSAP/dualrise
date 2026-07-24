@@ -28,7 +28,7 @@ export function OnboardingTour({
     {
       emoji: '👋',
       title: `BIENVENUE ${firstName.toUpperCase()}`,
-      body: `Ton dashboard USAP est ton hub central pour ton projet golf-études aux US.
+      body: `Ton dashboard Dual Rise est ton hub central pour ton projet golf-études aux US.
 
 Ce dashboard est partagé avec tes parents : vous pouvez tous y contribuer.
 
@@ -78,7 +78,7 @@ Préparation des calls coachs, infos visa, conseils académiques.
     {
       emoji: '🎉',
       title: 'TU ES PRÊT',
-      body: `Bonne chance dans ton projet ! L'équipe USAP est là pour t'accompagner.
+      body: `Bonne chance dans ton projet ! L'équipe Dual Rise est là pour t'accompagner.
 
 Tu peux refaire ce tour à tout moment depuis ton profil.
 

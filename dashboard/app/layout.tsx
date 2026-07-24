@@ -4,8 +4,8 @@ import './globals.css'
 import { CookieBanner } from '@/components/CookieBanner'
 
 export const metadata: Metadata = {
-  title: 'USAP Dashboard',
-  description: 'USAP family dashboard',
+  title: 'Dual Rise Dashboard',
+  description: 'Dual Rise family dashboard',
 }
 
 export default function RootLayout({
@@ -49,7 +49,7 @@ export default function RootLayout({
               </a>
               <span className="text-white/30">·</span>
               <a
-                href="mailto:nicolas@usathleticperformance.com"
+                href="mailto:nicplancha@gmail.com"
                 className="transition-colors hover:text-white hover:underline"
               >
                 Contact

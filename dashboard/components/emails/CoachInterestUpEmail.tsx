@@ -42,7 +42,7 @@ export function CoachInterestUpEmail({
       <Body style={body}>
         <Container style={container}>
           <Section style={header}>
-            <Img src={logoUrl} alt="USAP" width="120" height="40" style={logo} />
+            <Img src={logoUrl} alt="Dual Rise" width="120" height="40" style={logo} />
           </Section>
           <Section style={content}>
             <Heading style={h1}>Intérêt coach en hausse</Heading>
@@ -70,7 +70,7 @@ export function CoachInterestUpEmail({
               </Link>
             </Section>
             <Hr style={hr} />
-            <Text style={footer}>USAP — US Athletic Performance</Text>
+            <Text style={footer}>Dual Rise — US Athletic Performance</Text>
           </Section>
         </Container>
       </Body>

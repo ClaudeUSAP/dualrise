@@ -181,7 +181,7 @@ function buildDigestHTML(data: {
       ${sections.join('\n')}
       <hr style="border: none; border-top: 1px solid #eee; margin: 24px 0;" />
       <p style="font-size: 12px; color: #888;">
-        <a href="${APP_HOST}" style="color: #E11D2A;">Accéder au dashboard USAP</a><br/>
+        <a href="${APP_HOST}" style="color: #E11D2A;">Accéder au dashboard Dual Rise</a><br/>
         Vous recevez ce digest car votre email est lié au profil de ${escapeHtml(data.firstName)}.
       </p>
     </div>

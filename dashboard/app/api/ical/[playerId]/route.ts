@@ -120,11 +120,11 @@ export async function GET(
     const lines: string[] = [
       'BEGIN:VCALENDAR',
       'VERSION:2.0',
-      'PRODID:-//USAP Dashboard//FR',
+      'PRODID:-//Dual Rise Dashboard//FR',
       'CALSCALE:GREGORIAN',
       'METHOD:PUBLISH',
-      fold(`NAME:USAP Dashboard - ${fullName}`),
-      fold(`X-WR-CALNAME:USAP Dashboard - ${fullName}`),
+      fold(`NAME:Dual Rise Dashboard - ${fullName}`),
+      fold(`X-WR-CALNAME:Dual Rise Dashboard - ${fullName}`),
       'X-WR-TIMEZONE:Europe/Paris',
     ]
 

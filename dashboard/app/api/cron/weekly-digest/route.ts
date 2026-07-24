@@ -33,7 +33,7 @@ function timeFmt(locale: 'fr' | 'en') {
 }
 
 const COPY_FR = {
-  h1: (week: string) => `Ton récap USAP — semaine du ${week}`,
+  h1: (week: string) => `Ton récap Dual Rise — semaine du ${week}`,
   hello: (name: string) => `Coucou ${name} 👋`,
   section1: 'Nouvelles facs ajoutées cette semaine',
   section2: 'Prochains calls coachs',
@@ -43,11 +43,11 @@ const COPY_FR = {
   stageLabel: 'stage :',
   atTime: ' à ',
   cta: 'Ouvrir mon dashboard',
-  footer: 'USAP Dashboard — envoyé seulement les semaines avec du nouveau.',
+  footer: 'Dual Rise Dashboard — envoyé seulement les semaines avec du nouveau.',
   unsub: 'Se désinscrire de ces emails',
 }
 const COPY_EN = {
-  h1: (week: string) => `Your USAP summary — week of ${week}`,
+  h1: (week: string) => `Your Dual Rise summary — week of ${week}`,
   hello: (name: string) => `Hi ${name} 👋`,
   section1: 'New schools added this week',
   section2: 'Upcoming coach calls',
@@ -57,7 +57,7 @@ const COPY_EN = {
   stageLabel: 'stage:',
   atTime: ' at ',
   cta: 'Open my dashboard',
-  footer: 'USAP Dashboard — only sent on weeks with something new.',
+  footer: 'Dual Rise Dashboard — only sent on weeks with something new.',
   unsub: 'Unsubscribe from these emails',
 }
 
@@ -299,8 +299,8 @@ async function run() {
 
       const subject =
         playerLocale === 'en'
-          ? `Your USAP weekly summary — ${p.first_name}`
-          : `Ton récap USAP de la semaine — ${p.first_name}`
+          ? `Your Dual Rise weekly summary — ${p.first_name}`
+          : `Ton récap Dual Rise de la semaine — ${p.first_name}`
       const sectionsHtml = sections.join('')
 
       const sent: string[] = []

@@ -110,7 +110,7 @@ export async function createTask(
     const sendResult = await sendEmail({
       to,
       cc,
-      subject: `Nouvelle tâche USAP : ${title}`,
+      subject: `Nouvelle tâche Dual Rise : ${title}`,
       html,
       playerId,
       templateKey: 'player_task_assigned',

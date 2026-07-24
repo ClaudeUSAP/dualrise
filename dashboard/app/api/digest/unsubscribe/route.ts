@@ -12,9 +12,9 @@ function getAdminSupabase() {
 
 const COPY = {
   fr: {
-    confirmTitle: 'Se désinscrire des emails USAP',
+    confirmTitle: 'Se désinscrire des emails Dual Rise',
     confirmBody:
-      'Tu ne recevras plus le récap hebdomadaire USAP. Confirme ci-dessous.',
+      'Tu ne recevras plus le récap hebdomadaire Dual Rise. Confirme ci-dessous.',
     confirmBtn: 'Confirmer la désinscription',
     doneTitle: 'Désinscription confirmée',
     doneBody:
@@ -22,9 +22,9 @@ const COPY = {
     invalid: 'Lien invalide ou expiré.',
   },
   en: {
-    confirmTitle: 'Unsubscribe from USAP emails',
+    confirmTitle: 'Unsubscribe from Dual Rise emails',
     confirmBody:
-      'You will stop receiving the USAP weekly summary. Confirm below.',
+      'You will stop receiving the Dual Rise weekly summary. Confirm below.',
     confirmBtn: 'Confirm unsubscribe',
     doneTitle: 'Unsubscribe confirmed',
     doneBody:

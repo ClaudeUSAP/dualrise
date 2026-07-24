@@ -20,7 +20,7 @@
   },
   "schools": {
     "welcome": "Welcome, {name} 👋",
-    "subtitle": "Here is an overview of your USAP journey",
+    "subtitle": "Here is an overview of your Dual Rise journey",
     "compareCta": "Compare my schools",
     "sheetCta": "My school list",
     "synced": "Synced with your agent",
@@ -84,14 +84,14 @@
   },
   "parcours": {
     "title": "My US golf & study journey",
-    "subtitle": "Overview of the 7 phases of your project, from the USAP contract to arrival on campus.",
+    "subtitle": "Overview of the 7 phases of your project, from the Dual Rise contract to arrival on campus.",
     "youLeaveIn": "You leave in ",
     "inProgress": "In progress",
     "phases": {
       "acquisition": {
         "label": "Onboarding & contract",
         "period": "Year N-2 — Sept to Oct",
-        "description": "First contact with USAP, contract signed, first deposit paid. Project officially kicked off."
+        "description": "First contact with Dual Rise, contract signed, first deposit paid. Project officially kicked off."
       },
       "profile": {
         "label": "Profile creation",
@@ -127,14 +127,14 @@
   },
   "welcomeModal": {
     "title": "Welcome {firstName} 👋",
-    "intro": "This dashboard centralizes your USAP recruiting journey:",
+    "intro": "This dashboard centralizes your Dual Rise recruiting journey:",
     "bullets": [
       "📚 Your target universities",
       "✅ Your admin checklist (visa, INCRED, English tests…)",
       "📝 Notes and advice from your agent",
       "📅 Your deadlines and tasks"
     ],
-    "privacy": "🔒 Your data is stored in Europe and handled per the terms of your signed USAP contract.",
+    "privacy": "🔒 Your data is stored in Europe and handled per the terms of your signed Dual Rise contract.",
     "learnMore": "Learn more →",
     "saving": "Saving…",
     "ok": "Got it"

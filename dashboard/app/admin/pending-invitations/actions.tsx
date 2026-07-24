@@ -159,8 +159,8 @@ export async function approveInvitation(invitationId: string) {
         ? '<p>Aucun fichier trouvé.</p>'
         : `<p>Plusieurs candidats trouvés :</p><ul>${findRes.candidates.map((c) => `<li>${c.name} (${c.id})</li>`).join('')}</ul>`
       await sendEmail({
-        to: 'nicolas@usathleticperformance.com',
-        subject: `[USAP] Sheet Liste Facs introuvable pour ${invitation.first_name} ${invitation.last_name}`,
+        to: 'nicplancha@gmail.com',
+        subject: `[Dual Rise] Sheet Liste Facs introuvable pour ${invitation.first_name} ${invitation.last_name}`,
         html: `
           <p>Le joueur <strong>${invitation.first_name} ${invitation.last_name}</strong> vient d'être approved mais aucun sheet "Liste Facs" n'a pu être lié automatiquement.</p>
           ${candidatesText}
@@ -230,7 +230,7 @@ export async function approveInvitation(invitationId: string) {
 
   const emailResult = await sendEmail({
     to: recipientEmail,
-    subject: 'Ton accès à ton espace USAP',
+    subject: 'Ton accès à ton espace Dual Rise',
     html,
     playerId: player.id,
     templateKey: 'player_invitation',

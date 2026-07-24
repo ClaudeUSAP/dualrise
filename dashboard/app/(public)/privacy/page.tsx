@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Politique de confidentialité — USAP',
+  title: 'Politique de confidentialité — Dual Rise',
   description:
     'Politique de confidentialité de US Athletic Performance Sàrl conforme RGPD et LPD.',
 }
@@ -18,7 +18,7 @@ export default function PrivacyPage() {
 
       <h2>1. Qui sommes-nous</h2>
       <p>
-        <strong>US Athletic Performance Sàrl</strong> (ci-après «&nbsp;USAP&nbsp;», «&nbsp;nous&nbsp;» ou «&nbsp;notre&nbsp;»)
+        <strong>US Athletic Performance Sàrl</strong> (ci-après «&nbsp;Dual Rise&nbsp;», «&nbsp;nous&nbsp;» ou «&nbsp;notre&nbsp;»)
       </p>
       <ul>
         <li>Siège : Route des Acacias 48, 1227 Carouge (GE), Suisse</li>
@@ -29,28 +29,28 @@ export default function PrivacyPage() {
         <li>Téléphone : +1-872-279-0009</li>
         <li>
           Email :{' '}
-          <a href="mailto:nicolas@usathleticperformance.com">
-            nicolas@usathleticperformance.com
+          <a href="mailto:nicplancha@gmail.com">
+            nicplancha@gmail.com
           </a>
         </li>
         <li>Directeur de la publication : Nicolas Pierre Paviet, Fondateur</li>
       </ul>
       <p>
-        USAP est une agence suisse spécialisée dans le placement de jeunes joueurs et joueuses de golf européens dans les programmes universitaires américains (NCAA Division I, II, III, NAIA, JUCO).
+        Dual Rise est une agence suisse spécialisée dans le placement de jeunes joueurs et joueuses de golf européens dans les programmes universitaires américains (NCAA Division I, II, III, NAIA, JUCO).
       </p>
       <p>
-        USAP agit en qualité de <strong>responsable du traitement</strong> au sens du Règlement (UE) 2016/679 («&nbsp;RGPD&nbsp;») et de la Loi fédérale suisse sur la protection des données («&nbsp;LPD&nbsp;»).
+        Dual Rise agit en qualité de <strong>responsable du traitement</strong> au sens du Règlement (UE) 2016/679 («&nbsp;RGPD&nbsp;») et de la Loi fédérale suisse sur la protection des données («&nbsp;LPD&nbsp;»).
       </p>
 
       <h2>2. Référent en matière de protection des données</h2>
       <p>
-        USAP n&apos;a pas désigné de Délégué à la Protection des Données (DPO). Pour toute question ou pour exercer vos droits&nbsp;:
+        Dual Rise n&apos;a pas désigné de Délégué à la Protection des Données (DPO). Pour toute question ou pour exercer vos droits&nbsp;:
       </p>
       <ul>
         <li>
           Email :{' '}
-          <a href="mailto:nicolas@usathleticperformance.com">
-            nicolas@usathleticperformance.com
+          <a href="mailto:nicplancha@gmail.com">
+            nicplancha@gmail.com
           </a>
         </li>
         <li>Téléphone : +1-872-279-0009</li>
@@ -79,7 +79,7 @@ export default function PrivacyPage() {
           <strong>Critères de recrutement</strong> : budget familial, régions et divisions cibles, objectifs académiques
         </li>
         <li>
-          <strong>Notes internes</strong> : observations confidentielles produites par l&apos;agent USAP dédié
+          <strong>Notes internes</strong> : observations confidentielles produites par l&apos;agent Dual Rise dédié
         </li>
       </ul>
 
@@ -124,9 +124,9 @@ export default function PrivacyPage() {
 
       <h2>5. Qui a accès à vos données</h2>
 
-      <h3>5.1. Au sein d&apos;USAP</h3>
+      <h3>5.1. Au sein d&apos;Dual Rise</h3>
       <ul>
-        <li>L&apos;<strong>agent USAP</strong> dédié accède au profil complet de l&apos;athlète qu&apos;il suit</li>
+        <li>L&apos;<strong>agent Dual Rise</strong> dédié accède au profil complet de l&apos;athlète qu&apos;il suit</li>
         <li>Le <strong>fondateur Nicolas Paviet</strong> accède à l&apos;ensemble des données (supervision opérationnelle)</li>
         <li>Les <strong>parents/tuteurs</strong> accèdent au profil de leur enfant</li>
       </ul>
@@ -150,11 +150,11 @@ export default function PrivacyPage() {
 
       <h3>5.4. Traitement par intelligence artificielle</h3>
       <p>
-        USAP utilise l&apos;assistant <strong>Claude</strong> (Anthropic, Inc.) pour des tâches opérationnelles limitées : mise à jour des résultats sportifs, vérification de cohérence des données, optimisation du suivi.
+        Dual Rise utilise l&apos;assistant <strong>Claude</strong> (Anthropic, Inc.) pour des tâches opérationnelles limitées : mise à jour des résultats sportifs, vérification de cohérence des données, optimisation du suivi.
       </p>
       <ul>
         <li>Ces traitements ne produisent <strong>aucune décision à portée juridique</strong> ou affectant significativement l&apos;athlète au sens de l&apos;article 22 RGPD</li>
-        <li>Les décisions de recrutement, de stratégie et de communication sont prises <strong>exclusivement par les agents humains USAP</strong></li>
+        <li>Les décisions de recrutement, de stratégie et de communication sont prises <strong>exclusivement par les agents humains Dual Rise</strong></li>
         <li>Les données <strong>ne sont pas utilisées pour entraîner</strong> des modèles d&apos;IA tiers</li>
       </ul>
 
@@ -204,7 +204,7 @@ export default function PrivacyPage() {
       </ul>
       <p>
         <strong>Comment exercer&nbsp;:</strong> écrivez à{' '}
-        <a href="mailto:nicolas@usathleticperformance.com">nicolas@usathleticperformance.com</a>{' '}
+        <a href="mailto:nicplancha@gmail.com">nicplancha@gmail.com</a>{' '}
         en précisant la nature de votre demande. Réponse sous un mois maximum.
       </p>
       <p><strong>En cas de litige</strong>&nbsp;:</p>
@@ -230,7 +230,7 @@ export default function PrivacyPage() {
         <li><strong>Minimisation renforcée</strong> : seule l&apos;année de naissance est stockée, pas la date complète</li>
         <li><strong>Pas de profilage publicitaire</strong>, aucune transmission marketing</li>
         <li><strong>Pas de décision automatisée</strong> affectant le mineur : toutes les recommandations sont validées par un agent humain</li>
-        <li><strong>Usage de l&apos;image</strong> (photos, vidéos de swing) encadré par un consentement écrit dans le contrat signé entre USAP et le représentant légal</li>
+        <li><strong>Usage de l&apos;image</strong> (photos, vidéos de swing) encadré par un consentement écrit dans le contrat signé entre Dual Rise et le représentant légal</li>
         <li><strong>Droit de retrait facilité</strong> à la majorité (suppression ou portabilité sous contrôle de l&apos;athlète)</li>
       </ul>
 
@@ -256,7 +256,7 @@ export default function PrivacyPage() {
       <ul>
         <li>
           Email :{' '}
-          <a href="mailto:nicolas@usathleticperformance.com">nicolas@usathleticperformance.com</a>
+          <a href="mailto:nicplancha@gmail.com">nicplancha@gmail.com</a>
         </li>
         <li>Téléphone : +1-872-279-0009</li>
         <li>Courrier : US Athletic Performance Sàrl, Route des Acacias 48, 1227 Carouge (GE), Suisse</li>

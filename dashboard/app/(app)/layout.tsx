@@ -52,7 +52,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
           <div className="relative h-[50px] w-[144px] shrink-0 overflow-hidden">
             <Image
               src="/dualrise-logo-white.svg"
-              alt="USAP Performance"
+              alt="Dual Rise Performance"
               width={213}
               height={379}
               className="absolute max-w-none"

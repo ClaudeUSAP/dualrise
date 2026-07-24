@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy — USAP',
+  title: 'Privacy Policy — Dual Rise',
   description:
     'Privacy policy of US Athletic Performance Sàrl, GDPR and Swiss FADP compliant.',
 }
@@ -18,7 +18,7 @@ export default function PrivacyPageEN() {
 
       <h2>1. Who we are</h2>
       <p>
-        <strong>US Athletic Performance Sàrl</strong> (hereinafter &quot;USAP&quot;, &quot;we&quot; or &quot;our&quot;)
+        <strong>US Athletic Performance Sàrl</strong> (hereinafter &quot;Dual Rise&quot;, &quot;we&quot; or &quot;our&quot;)
       </p>
       <ul>
         <li>Registered office: Route des Acacias 48, 1227 Carouge (GE), Switzerland</li>
@@ -29,28 +29,28 @@ export default function PrivacyPageEN() {
         <li>Phone: +1-872-279-0009</li>
         <li>
           Email:{' '}
-          <a href="mailto:nicolas@usathleticperformance.com">
-            nicolas@usathleticperformance.com
+          <a href="mailto:nicplancha@gmail.com">
+            nicplancha@gmail.com
           </a>
         </li>
         <li>Publication director: Nicolas Pierre Paviet, Founder</li>
       </ul>
       <p>
-        USAP is a Swiss agency specialized in placing European young golfers into U.S. college golf programs (NCAA Division I, II, III, NAIA, JUCO).
+        Dual Rise is a Swiss agency specialized in placing European young golfers into U.S. college golf programs (NCAA Division I, II, III, NAIA, JUCO).
       </p>
       <p>
-        USAP acts as <strong>data controller</strong> under the EU General Data Protection Regulation (GDPR) and the Swiss Federal Act on Data Protection (FADP).
+        Dual Rise acts as <strong>data controller</strong> under the EU General Data Protection Regulation (GDPR) and the Swiss Federal Act on Data Protection (FADP).
       </p>
 
       <h2>2. Data protection contact</h2>
       <p>
-        USAP has not appointed a Data Protection Officer (DPO). For any question or to exercise your rights:
+        Dual Rise has not appointed a Data Protection Officer (DPO). For any question or to exercise your rights:
       </p>
       <ul>
         <li>
           Email:{' '}
-          <a href="mailto:nicolas@usathleticperformance.com">
-            nicolas@usathleticperformance.com
+          <a href="mailto:nicplancha@gmail.com">
+            nicplancha@gmail.com
           </a>
         </li>
         <li>Phone: +1-872-279-0009</li>
@@ -79,7 +79,7 @@ export default function PrivacyPageEN() {
           <strong>Recruitment criteria</strong>: family budget, target regions and divisions, academic goals
         </li>
         <li>
-          <strong>Internal notes</strong>: confidential observations produced by the dedicated USAP agent
+          <strong>Internal notes</strong>: confidential observations produced by the dedicated Dual Rise agent
         </li>
       </ul>
 
@@ -124,9 +124,9 @@ export default function PrivacyPageEN() {
 
       <h2>5. Who has access to your data</h2>
 
-      <h3>5.1. Within USAP</h3>
+      <h3>5.1. Within Dual Rise</h3>
       <ul>
-        <li>The dedicated <strong>USAP agent</strong> accesses the full profile of the athlete they support</li>
+        <li>The dedicated <strong>Dual Rise agent</strong> accesses the full profile of the athlete they support</li>
         <li><strong>Founder Nicolas Paviet</strong> has access to all data (operational oversight)</li>
         <li><strong>Parents/guardians</strong> access their child&apos;s profile</li>
       </ul>
@@ -150,11 +150,11 @@ export default function PrivacyPageEN() {
 
       <h3>5.4. AI processing</h3>
       <p>
-        USAP uses the AI assistant <strong>Claude</strong> (Anthropic, Inc.) for limited operational tasks: sports results updates, data consistency checks, file tracking optimization.
+        Dual Rise uses the AI assistant <strong>Claude</strong> (Anthropic, Inc.) for limited operational tasks: sports results updates, data consistency checks, file tracking optimization.
       </p>
       <ul>
         <li>This processing does <strong>not produce decisions with legal or significant effects</strong> on the athlete within the meaning of Article 22 GDPR</li>
-        <li>Recruitment decisions, strategy and communication are <strong>exclusively made by human USAP agents</strong></li>
+        <li>Recruitment decisions, strategy and communication are <strong>exclusively made by human Dual Rise agents</strong></li>
         <li>Data <strong>is not used to train</strong> third-party AI models</li>
       </ul>
 
@@ -204,7 +204,7 @@ export default function PrivacyPageEN() {
       </ul>
       <p>
         <strong>How to exercise:</strong> write to{' '}
-        <a href="mailto:nicolas@usathleticperformance.com">nicolas@usathleticperformance.com</a>{' '}
+        <a href="mailto:nicplancha@gmail.com">nicplancha@gmail.com</a>{' '}
         specifying the nature of your request. Reply within one month maximum.
       </p>
       <p><strong>In case of dispute:</strong></p>
@@ -230,7 +230,7 @@ export default function PrivacyPageEN() {
         <li><strong>Enhanced minimization</strong>: only year of birth is stored, not the full date</li>
         <li><strong>No advertising profiling</strong>, no marketing transmission</li>
         <li><strong>No automated decision-making</strong> affecting the minor: all recommendations are validated by a human agent</li>
-        <li><strong>Image usage</strong> (photos, swing videos) framed by written consent in the contract signed between USAP and the legal guardian</li>
+        <li><strong>Image usage</strong> (photos, swing videos) framed by written consent in the contract signed between Dual Rise and the legal guardian</li>
         <li><strong>Facilitated right of withdrawal</strong> at majority (deletion or portability under the athlete&apos;s control)</li>
       </ul>
 
@@ -256,7 +256,7 @@ export default function PrivacyPageEN() {
       <ul>
         <li>
           Email:{' '}
-          <a href="mailto:nicolas@usathleticperformance.com">nicolas@usathleticperformance.com</a>
+          <a href="mailto:nicplancha@gmail.com">nicplancha@gmail.com</a>
         </li>
         <li>Phone: +1-872-279-0009</li>
         <li>Mail: US Athletic Performance Sàrl, Route des Acacias 48, 1227 Carouge (GE), Switzerland</li>

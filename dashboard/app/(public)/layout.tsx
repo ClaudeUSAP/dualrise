@@ -13,7 +13,7 @@ export default function PublicLayout({
           <Link href="/" className="flex items-center gap-2">
             <Image
               src="/dualrise-logo-white.svg"
-              alt="USAP"
+              alt="Dual Rise"
               width={120}
               height={40}
               className="h-10 w-auto"

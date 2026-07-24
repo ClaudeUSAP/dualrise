@@ -83,27 +83,6 @@ export default async function ResourcesPage() {
       )}
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {/* External resource — Ranking & Impact Table (story.usathleticperformance.com) */}
-        <a
-          href="https://story.usathleticperformance.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group flex flex-col rounded-md border border-line bg-white p-5 transition-all hover:scale-[1.02] hover:border-orange hover:shadow-lg"
-        >
-          <div className="mb-3 text-3xl leading-none" aria-hidden>
-            📊
-          </div>
-          <h2 className="text-lg font-semibold text-navy transition-colors group-hover:text-orange">
-            {serverT(locale, 'resources.rankingImpact.title')}
-          </h2>
-          <p className="mt-1 text-sm text-muted line-clamp-3">
-            {serverT(locale, 'resources.rankingImpact.description')}
-          </p>
-          <span className="mt-auto pt-3 text-[11px] font-bold uppercase tracking-wide text-orange">
-            {serverT(locale, 'resources.rankingImpact.open')}
-          </span>
-        </a>
-
         {articles.length > 0 &&
           articles.map((a) => {
             const title =

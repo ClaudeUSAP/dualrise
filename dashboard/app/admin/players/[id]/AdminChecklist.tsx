@@ -542,7 +542,7 @@ function renderDefault(args: {
           <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
             <span className={d.hidden ? 'text-muted line-through' : 'text-navy'}>{currentLabel}</span>
             {currentUrl && <a href={currentUrl} target="_blank" rel="noreferrer" className="text-xs text-orange">↗</a>}
-            {d.is_usap_side && <span className="rounded bg-blue-100 px-1 text-[9px] font-bold uppercase text-blue-700">USAP</span>}
+            {d.is_usap_side && <span className="rounded bg-blue-100 px-1 text-[9px] font-bold uppercase text-blue-700">Dual Rise</span>}
             {isModified && <span className="rounded bg-orange/20 px-1 text-[9px] text-orange">modifié</span>}
             {currentDueHint && (
               <span className="text-[11px] text-orange-600">⏰ {currentDueHint}</span>

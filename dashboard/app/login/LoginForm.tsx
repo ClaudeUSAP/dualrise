@@ -39,7 +39,7 @@ export function LoginForm({
       <div className="w-full max-w-sm">
         <div className="mb-8 flex justify-center">
           <span className="rounded bg-[#E11D2A] px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">
-            USAP
+            Dual Rise
           </span>
         </div>
         <h1 className="mb-2 text-center text-3xl font-semibold tracking-tight text-[#0B1D58]">

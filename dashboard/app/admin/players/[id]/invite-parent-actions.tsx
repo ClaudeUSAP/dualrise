@@ -5,10 +5,10 @@ import { createClient as createAdminClient } from '@supabase/supabase-js'
 import { revalidatePath } from 'next/cache'
 import { InvitationEmail } from '@/components/emails/InvitationEmail'
 import { sendEmail } from '@/lib/email'
-import { LOGO_URL } from '@/lib/site'
+import { APP_HOST, LOGO_URL } from '@/lib/site'
 import { createClient } from '@/lib/supabase/server'
 
-const PLAYER_HOST = 'https://player.usathleticperformance.com'
+const PLAYER_HOST = APP_HOST
 
 function getAdminSupabase() {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL
@@ -139,7 +139,7 @@ export async function invitePlayerParent(
 
   const result = await sendEmail({
     to: recipientEmail,
-    subject: "Votre accès à l'espace USAP de votre enfant",
+    subject: "Votre accès à l'espace Dual Rise de votre enfant",
     html,
     playerId,
     templateKey: 'parent_invitation',
