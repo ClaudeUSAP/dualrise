@@ -2,61 +2,45 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Mentions légales — Dual Rise',
-  description: 'Mentions légales de US Athletic Performance Sàrl.',
+  description: 'Mentions légales de Dual Rise (provisoires).',
 }
 
+// ⚠️ TODO Dual Rise — mentions légales PROVISOIRES (placeholders).
+// Anciennes mentions USAP (US Athletic Performance Sàrl) retirées le 23/07.
+// À compléter avec la vraie entité juridique Dual Rise, l'adresse, les N° d'immatriculation,
+// l'hébergement réel et à faire relire par un juriste AVANT toute mise en ligne publique.
 export default function LegalPage() {
   return (
     <>
       <h1>Mentions légales</h1>
-      <p className="meta">Dernière mise à jour : 13 mai 2026</p>
+      <p className="meta">⚠️ Version provisoire — à compléter avant mise en ligne publique.</p>
 
       <h2>Éditeur du site</h2>
-      <p>
-        <strong>US Athletic Performance Sàrl</strong>
-      </p>
       <ul>
-        <li>Forme juridique : Société à responsabilité limitée (Sàrl) de droit suisse</li>
-        <li>Siège social : Route des Acacias 48, 1227 Carouge (GE), Suisse</li>
-        <li>Capital social : CHF 20&apos;000</li>
-        <li>N° IDE : CHE-243.693.381</li>
-        <li>N° au Registre du Commerce du Canton de Genève : CH-660.1.979.024-9</li>
-        <li>Date d&apos;inscription au RC : 5 juin 2024 (statuts du 30 mai 2024)</li>
-        <li>N° TVA : CHE-243.693.381 TVA (si assujetti)</li>
-        <li>Téléphone : +1-872-279-0009</li>
+        <li>Raison sociale : <strong>Dual Rise</strong> [entité juridique à compléter]</li>
+        <li>Forme juridique : [à compléter]</li>
+        <li>Siège social : [adresse à compléter]</li>
+        <li>N° d&apos;immatriculation : [à compléter]</li>
+        <li>N° TVA : [à compléter]</li>
+        <li>Téléphone : [à compléter]</li>
         <li>
           Email :{' '}
-          <a href="mailto:nicplancha@gmail.com">
-            nicplancha@gmail.com
-          </a>
+          <a href="mailto:nicplancha@gmail.com">nicplancha@gmail.com</a>
         </li>
         <li>
           <strong>Directeur de la publication</strong> : Nicolas Pierre Paviet, Fondateur
         </li>
-        <li>
-          <strong>Organe de publication officiel</strong> : Feuille Officielle Suisse du Commerce (FOSC / SHAB)
-        </li>
       </ul>
 
       <h2>Hébergement</h2>
-      <ul>
-        <li>
-          <strong>usathleticperformance.com</strong> (et www) — Framer B.V., Stadhouderskade 55, 1072 AB Amsterdam, Pays-Bas — UE (Pays-Bas) avec CDN mondial
-        </li>
-        <li>
-          <strong>scout.usathleticperformance.com</strong> — Lovable AB / Vercel Inc. — UE (Frankfurt) pour la base de données
-        </li>
-        <li>
-          <strong>player.usathleticperformance.com</strong> — Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA — UE (Frankfurt) pour la base de données, CDN mondial pour les pages
-        </li>
-        <li>
-          <strong>map.usathleticperformance.com</strong> — GitHub Pages (Microsoft Corporation, Redmond, WA, USA) — États-Unis avec CDN mondial
-        </li>
-      </ul>
+      <p>
+        Sites hébergés par <strong>Vercel Inc.</strong> ; base de données par{' '}
+        <strong>Supabase</strong>. [Coordonnées complètes des hébergeurs à compléter.]
+      </p>
 
       <h2>Propriété intellectuelle</h2>
       <p>
-        L&apos;ensemble des contenus présents sur les sites Dual Rise (textes, images, vidéos, logo, charte graphique, architecture du site) sont la propriété exclusive de US Athletic Performance Sàrl ou de ses partenaires, et sont protégés par le droit suisse et international de la propriété intellectuelle.
+        L&apos;ensemble des contenus présents sur les sites Dual Rise (textes, images, vidéos, logo, charte graphique, architecture du site) sont la propriété exclusive de Dual Rise ou de ses partenaires, et sont protégés par le droit de la propriété intellectuelle applicable.
       </p>
       <p>
         Toute reproduction, représentation, modification, publication ou adaptation, totale ou partielle, des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de Dual Rise.
@@ -65,7 +49,7 @@ export default function LegalPage() {
         <strong>Photos et vidéos des athlètes</strong> : les photos et vidéos publiées proviennent de différentes sources (athlètes eux-mêmes, parents, Dual Rise, photographes mandatés) et sont utilisées avec autorisation expresse via le contrat signé entre Dual Rise et le représentant légal de chaque athlète (clause de droit à l&apos;image).
       </p>
       <p>
-        Les noms, logos et marques des universités américaines et des fédérations sportives (NCAA, NAIA, FFGOLF, etc.) mentionnés sur les sites sont la propriété de leurs détenteurs respectifs. Leur utilisation s&apos;inscrit dans une démarche d&apos;information et n&apos;implique aucune affiliation ou partenariat sauf mention explicite.
+        Les noms, logos et marques des universités américaines et des fédérations sportives mentionnés sur les sites sont la propriété de leurs détenteurs respectifs. Leur utilisation s&apos;inscrit dans une démarche d&apos;information et n&apos;implique aucune affiliation ou partenariat sauf mention explicite.
       </p>
 
       <h2>Limitation de responsabilité</h2>
@@ -78,17 +62,13 @@ export default function LegalPage() {
 
       <h2>Loi applicable et juridiction</h2>
       <p>
-        La consultation et l&apos;utilisation des sites Dual Rise sont régies par le <strong>droit suisse</strong>. Tout litige relatif à l&apos;utilisation des sites sera soumis à la compétence exclusive des <strong>tribunaux du Canton de Genève (Suisse)</strong>, sauf disposition légale impérative contraire.
-      </p>
-      <p>
-        Les consommateurs résidant dans l&apos;Union européenne conservent le bénéfice des dispositions impératives de leur droit national.
+        La loi applicable et la juridiction compétente seront précisées dans la version définitive des présentes mentions légales. [À compléter selon l&apos;entité juridique Dual Rise.]
       </p>
 
       <h2>Crédits</h2>
       <ul>
         <li>Conception et développement : équipe Dual Rise</li>
         <li>Photos et vidéos : Dual Rise, athlètes (avec autorisation), parents, partenaires</li>
-        <li>Cartographie (map.usap) : basée sur les données publiques NCAA et les sources officielles des universités</li>
       </ul>
     </>
   )
