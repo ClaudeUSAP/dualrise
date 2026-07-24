@@ -68,6 +68,15 @@ Testé en vrai le 23/07 : création d'un joueur via le form admin (UTR/WTN/surfa
 - `CRON_SECRET` = (généré, dans notre échange)
 - `DIGEST_UNSUB_SECRET` = (généré, dans notre échange)
 
+## 🐞 Bugs corrigés (23/07, en prod)
+- [x] **Admin View/Edit d'un joueur → « Athlete not found »** : `isUUID` (2 copies) rejetait l'id seed `11111111-…` (nibble variant `1`, pas RFC `[89ab]`) → `getAthleteById` abandonnait. Regex assoupli (accepte tout UUID hex 8-4-4-4-12). **View + Edit OK.** ✅
+- [x] Menu admin : **« Analytics & Reports »** + **« Data Import/Export »** masqués (commentés dans `AppSidebar.tsx`, décommentables). ✅
+- [ ] Résidu golf mineur sur la fiche admin **View** : encart « Drive Distance » + « Best Recent Avg » (métriques golf) → à retirer/adapter tennis (déjà lié aux composants tournois partagés).
+
+## 🔴 En cours / à finir
+- [ ] **Placeholders légaux `/privacy` + `/terms`** (dashboard) : `legal/page.tsx` fait ✅, mais privacy (FR+EN) + terms contiennent encore l'entité **US Athletic Performance Sàrl**, l'adresse suisse, N° IDE/RC → à passer en placeholders (interrompu, à reprendre).
+- [ ] **Accès dashboard (magic link)** demandé : nécessite la clé **service_role dualrise-dashboard** pour générer le lien sans email (Resend bloqué). À faire dès que tu me la donnes.
+
 ## 📦 Données de démo
 - Joueur seed : **Matiej Reiter** (slug `matiej-reiter`) — profil + 5 matchs.
 - PDF de démo généré : `~/Downloads/Matiej_Reiter_DualRise.pdf` (rendu tennis à regarder).
